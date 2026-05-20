@@ -1,24 +1,28 @@
 # UEFI Firmware Skill
 
-A bilingual Codex skill for UEFI firmware architecture, specifications, edk2
+A bilingual agent skill for UEFI firmware architecture, specifications, edk2
 development, and debugging guidance.
 
-This repository packages a reusable skill for agents that work on UEFI firmware
-topics. It is intentionally broad enough for UEFI/PI/edk2/HII/ACPI/SMBIOS/Secure
-Boot/QEMU questions, while keeping the loaded skill small through reference
-files.
+This repository packages a reusable skill for AI agents, local assistants, and
+firmware development workflows that work on UEFI topics. It is intentionally
+broad enough for UEFI/PI/edk2/HII/ACPI/SMBIOS/Secure Boot/QEMU questions, while
+keeping the loaded skill small through reference files.
 
 ## Install
 
-Install the skill into Codex:
+Use `skills/uefi-firmware/` as the installable skill directory. Any compatible
+agent runtime can load the `SKILL.md` file and progressively read the reference
+files as needed.
+
+For Codex-compatible environments:
 
 ```sh
-python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
   --repo MarsDoge/uefi-firmware-skill \
   --path skills/uefi-firmware
 ```
 
-Restart Codex after installation.
+Restart the agent runtime after installation if it only loads skills at startup.
 
 ## What It Covers
 
@@ -41,7 +45,7 @@ Restart Codex after installation.
 ```text
 skills/uefi-firmware/
 |-- SKILL.md
-|-- agents/openai.yaml
+|-- agents/openai.yaml        # optional OpenAI/Codex-compatible metadata
 `-- references/
     |-- debugging-map.md
     |-- edk2-map.md
