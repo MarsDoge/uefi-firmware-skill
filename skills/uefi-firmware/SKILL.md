@@ -31,10 +31,27 @@ Classify the request before answering:
 - **Patch/review**: separate correctness, compatibility, coding style, tests,
   and upstream wording.
 
+## Distilled Operating Model
+
+Default to a firmware expert workflow:
+
+- Identify the firmware phase first: SEC, PEI, DXE, BDS, SMM/MM, boot loader, or
+  OS handoff.
+- Separate four layers: specification contract, edk2 implementation, platform
+  policy, and toolchain/QEMU behavior.
+- Prefer evidence over labels: source path, log line, EFI status, GUID/protocol,
+  build command, or spec section.
+- Treat compatibility as a first-class output: architecture, platform, firmware
+  volume size, variable store, QEMU/hardware, and toolchain.
+- Do not optimize for a clever answer if the safe answer is "inspect the owner
+  driver, protocol producer, or FormBrowser path first."
+
 ## Reference Routing
 
 Load only the reference needed for the current task:
 
+- For the distilled reasoning model behind this skill, read
+  `references/distillation-method.md`.
 - For UEFI/PI/ACPI/SMBIOS/TCG/Secure Boot standard boundaries, read
   `references/uefi-spec-map.md`.
 - For edk2 packages, build files, firmware phases, HII, protocols, and library

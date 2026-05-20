@@ -8,6 +8,10 @@ firmware development workflows that work on UEFI topics. It is intentionally
 broad enough for UEFI/PI/edk2/HII/ACPI/SMBIOS/Secure Boot/QEMU questions, while
 keeping the loaded skill small through reference files.
 
+The skill is distilled as a firmware expert operating model: classify the phase,
+separate specification contracts from edk2 implementation details, inspect
+source and logs before guessing, and keep compatibility evidence visible.
+
 ## Install
 
 Use `skills/uefi-firmware/` as the installable skill directory. Any compatible
@@ -32,6 +36,7 @@ Restart the agent runtime after installation if it only loads skills at startup.
 - ACPI, SMBIOS, TCG/TPM, and Secure Boot orientation
 - QEMU firmware debugging and serial-log triage
 - Upstream-friendly firmware patch review and commit wording
+- Firmware expert reasoning patterns distilled into reusable agent behavior
 
 ## What It Does Not Do
 
@@ -48,10 +53,18 @@ skills/uefi-firmware/
 |-- agents/openai.yaml        # optional OpenAI/Codex-compatible metadata
 `-- references/
     |-- debugging-map.md
+    |-- distillation-method.md
     |-- edk2-map.md
     |-- uefi-spec-map.md
     `-- upstreaming.md
 ```
+
+## Inspiration
+
+This project takes inspiration from the skill distillation idea in
+[alchaincyf/nuwa-skill](https://github.com/alchaincyf/nuwa-skill), but adapts it
+from personality/perspective distillation into a domain-expert firmware workflow.
+No vendor firmware assets or private documentation are included.
 
 ## Author
 
