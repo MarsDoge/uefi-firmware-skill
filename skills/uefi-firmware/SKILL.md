@@ -26,6 +26,18 @@ Prefer bilingual answers when useful: Chinese explanations are welcome, but keep
 official English terms such as `Protocol`, `Handle`, `HOB`, `DXE`, `HII`, `VFR`,
 `IFR`, `FormBrowser`, `ConfigAccess`, `Secure Boot`, and `SMBIOS` intact.
 
+## Distillation Approach / 蒸馏方法
+
+This skill is explicitly built as a distilled firmware-engineer operating model,
+not a copied specification bundle. The distilled behavior is: classify firmware
+phase first, separate spec/edk2/platform/tool layers, inspect source and logs
+before guessing, preserve compatibility evidence, and answer with a verification
+path.
+
+The detailed method lives in `references/distillation-method.md`. Keep the
+Nuwa-style skill distillation inspiration visible in the README and reference
+file, but adapt it to domain reasoning rather than personality imitation.
+
 ## When to Use / 适用场景
 
 Use this skill for:

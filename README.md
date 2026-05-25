@@ -12,6 +12,18 @@ The skill is distilled as a firmware expert operating model: classify the phase,
 separate specification contracts from edk2 implementation details, inspect
 source and logs before guessing, and keep compatibility evidence visible.
 
+## Skill Distillation / 技能蒸馏
+
+This project intentionally keeps the distillation idea visible. It takes
+inspiration from [alchaincyf/nuwa-skill](https://github.com/alchaincyf/nuwa-skill),
+but adapts the method from personality/perspective distillation into domain-expert
+firmware reasoning: phase-first classification, standards-boundary discipline,
+source-first debugging, and evidence-based review.
+
+The loaded `SKILL.md` contains the compact operating model; the detailed method is
+kept in `references/distillation-method.md` so agents can load it only when needed.
+No vendor firmware assets or private documentation are included.
+
 ## Install
 
 Use `skills/uefi-firmware/` as the installable skill directory. Any compatible
