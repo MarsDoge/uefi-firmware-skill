@@ -3,26 +3,27 @@
 A bilingual agent skill for UEFI firmware architecture, specifications, edk2
 development, and debugging guidance.
 
-This repository packages a reusable skill for AI agents, local assistants, and
-firmware development workflows that work on UEFI topics. It is intentionally
-broad enough for UEFI/PI/edk2/HII/ACPI/SMBIOS/Secure Boot/QEMU questions, while
-keeping the loaded skill small through reference files.
+This repository packages an installable UEFI Firmware Skill for AI agents, local
+assistants, and firmware development workflows. It is intentionally broad enough
+for UEFI/PI/edk2/HII/ACPI/SMBIOS/Secure Boot/QEMU questions, while keeping the
+loaded skill small through reference files.
 
-The skill is distilled as a firmware expert operating model: classify the phase,
-separate specification contracts from edk2 implementation details, inspect
-source and logs before guessing, and keep compatibility evidence visible.
+The skill includes a distilled reasoning reference for firmware work: classify
+the phase, separate specification contracts from edk2 implementation details,
+inspect source and logs before guessing, and keep compatibility evidence visible.
 
-## Skill Distillation / 技能蒸馏
+## Included Reasoning Reference / 推理参考
 
-This project intentionally keeps the distillation idea visible. It takes
-inspiration from [alchaincyf/nuwa-skill](https://github.com/alchaincyf/nuwa-skill),
-but adapts the method from personality/perspective distillation into domain-expert
+This skill includes a Nuwa-inspired distilled reasoning note in
+`references/distillation-method.md`. It takes inspiration from
+[alchaincyf/nuwa-skill](https://github.com/alchaincyf/nuwa-skill), but adapts one
+reference method from personality/perspective distillation into domain-expert
 firmware reasoning: phase-first classification, standards-boundary discipline,
 source-first debugging, and evidence-based review.
 
-The loaded `SKILL.md` contains the compact operating model; the detailed method is
-kept in `references/distillation-method.md` so agents can load it only when needed.
-No vendor firmware assets or private documentation are included.
+The loaded `SKILL.md` contains the compact operating model; agents can load the
+distilled reasoning reference only when needed. No vendor firmware assets or
+private documentation are included.
 
 ## Install
 
@@ -61,7 +62,7 @@ Restart the agent runtime after installation if it only loads skills at startup.
 - ACPI, SMBIOS, TCG/TPM, and Secure Boot orientation
 - QEMU firmware debugging and serial-log triage
 - Upstream-friendly firmware patch review and commit wording
-- Firmware expert reasoning patterns distilled into reusable agent behavior
+- Firmware expert reasoning patterns included as a reusable reference
 
 ## What It Does Not Do
 
@@ -94,13 +95,6 @@ skills/uefi-firmware/
 - `references/edk2-map.md`, `debugging-map.md`, `upstreaming.md`, and
   `distillation-method.md`: focused routing for implementation, debug, review,
   and reasoning behavior.
-
-## Inspiration
-
-This project takes inspiration from the skill distillation idea in
-[alchaincyf/nuwa-skill](https://github.com/alchaincyf/nuwa-skill), but adapts it
-from personality/perspective distillation into a domain-expert firmware workflow.
-No vendor firmware assets or private documentation are included.
 
 ## Author
 

@@ -26,17 +26,17 @@ Prefer bilingual answers when useful: Chinese explanations are welcome, but keep
 official English terms such as `Protocol`, `Handle`, `HOB`, `DXE`, `HII`, `VFR`,
 `IFR`, `FormBrowser`, `ConfigAccess`, `Secure Boot`, and `SMBIOS` intact.
 
-## Distillation Approach / 蒸馏方法
+## Distilled Reasoning Reference / 蒸馏推理参考
 
-This skill is explicitly built as a distilled firmware-engineer operating model,
-not a copied specification bundle. The distilled behavior is: classify firmware
-phase first, separate spec/edk2/platform/tool layers, inspect source and logs
-before guessing, preserve compatibility evidence, and answer with a verification
-path.
+This skill includes a distilled firmware-reasoning note/reference alongside the
+main UEFI guidance; it is not a copied specification bundle. The included
+reasoning pattern is: classify firmware phase first, separate
+spec/edk2/platform/tool layers, inspect source and logs before guessing,
+preserve compatibility evidence, and answer with a verification path.
 
-The detailed method lives in `references/distillation-method.md`. Keep the
-Nuwa-style skill distillation inspiration visible in the README and reference
-file, but adapt it to domain reasoning rather than personality imitation.
+The detailed note lives in `references/distillation-method.md`. Keep the
+Nuwa-style skill distillation inspiration scoped to that reference method, adapted
+to domain reasoning rather than personality imitation.
 
 ## When to Use / 适用场景
 
@@ -90,7 +90,7 @@ Load only the reference needed for the current task:
 
 - For practical command-level templates and evidence collection, read
   `references/workflows.md`.
-- For the distilled reasoning model behind this skill, read
+- For the included distilled reasoning reference, read
   `references/distillation-method.md`.
 - For UEFI/PI/ACPI/SMBIOS/TCG/Secure Boot standard boundaries and official links,
   read `references/uefi-spec-map.md`.
