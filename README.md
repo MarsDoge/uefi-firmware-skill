@@ -18,6 +18,19 @@ Use `skills/uefi-firmware/` as the installable skill directory. Any compatible
 agent runtime can load the `SKILL.md` file and progressively read the reference
 files as needed.
 
+For Hermes Agent local installs, copy the full skill directory into your local
+skills directory, then reload skills or restart Hermes:
+
+```sh
+mkdir -p ~/.hermes/skills
+cp -R skills/uefi-firmware ~/.hermes/skills/
+# In an active Hermes session, run /reload-skills if available; otherwise restart.
+```
+
+If your Hermes install uses a different skill directory, copy the entire
+`skills/uefi-firmware/` directory there. Do not copy only `SKILL.md`; the
+reference files are part of the skill.
+
 For Codex-compatible environments:
 
 ```sh
@@ -56,8 +69,19 @@ skills/uefi-firmware/
     |-- distillation-method.md
     |-- edk2-map.md
     |-- uefi-spec-map.md
-    `-- upstreaming.md
+    |-- upstreaming.md
+    `-- workflows.md
 ```
+
+## Reference Files
+
+- `references/workflows.md`: command-level templates for edk2 builds, source
+  search, QEMU/OVMF debug, HII/VFR/IFR triage, and patch-review evidence.
+- `references/uefi-spec-map.md`: official UEFI/PI/ACPI/SMBIOS/TCG/TPM and edk2
+  documentation links plus standards-boundary guidance.
+- `references/edk2-map.md`, `debugging-map.md`, `upstreaming.md`, and
+  `distillation-method.md`: focused routing for implementation, debug, review,
+  and reasoning behavior.
 
 ## Inspiration
 
