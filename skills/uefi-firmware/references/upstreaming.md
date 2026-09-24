@@ -10,7 +10,23 @@ communication.
 - Scope: avoid unrelated refactors in bug fixes.
 - Build impact across supported toolchains and architectures.
 - Tests or reproduction steps that reviewers can run.
-- Clear failure mode before and after the patch.
+- Clear defect or limitation, with before/after results only when actually tested.
+
+## Evidence-Bounded Findings / 有证据边界的问题说明
+
+**Rule:** Give each finding a trigger, impact, supporting evidence, and smallest
+complete fix. Distinguish demonstrated or statically proven defects from
+compatibility risks, missing tests, and style suggestions. Judge severity against
+reachable inputs and actual supported configurations.
+
+**Example:** An untested allocation-failure path is a coverage gap. If inspection
+also shows that the failure returns with an owned buffer unreleased, describe the
+specific leak and control flow as a static finding; do not claim a reproduced leak
+unless the failure path was executed.
+
+**Limit:** Neither lack of reproduction nor lack of tests settles correctness.
+State what is proven and what remains uncertain. Cross-architecture implementations
+are comparison material, not substitutes for the target contract.
 
 ## Commit Message Shape
 

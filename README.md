@@ -22,8 +22,15 @@ firmware reasoning: phase-first classification, standards-boundary discipline,
 source-first debugging, and evidence-based review.
 
 The loaded `SKILL.md` contains the compact operating model; agents can load the
-distilled reasoning reference only when needed. No vendor firmware assets or
-private documentation are included.
+distilled reasoning reference only when needed. It presents transferable rules,
+short examples, and explicit limits: choose evidence for the question, trace the
+complete data path, fix the owning layer, verify the loaded artifact, test the
+promised behavior, and keep conclusions within the evidence.
+
+推理参考采用“通用规则 → 简短例子 → 结论边界”的结构。案例用于说明方法，
+不把单个平台的实现或一次调试经验当成通用要求。
+
+No vendor firmware assets or private documentation are included.
 
 ## Install
 

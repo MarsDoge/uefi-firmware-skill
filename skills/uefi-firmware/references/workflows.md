@@ -121,7 +121,31 @@ Checklist:
 - Is the requested change standard HII behavior, edk2 browser implementation,
   or platform UI policy?
 
-## 5. Firmware Patch Review Evidence
+## 5. Behavior Verification Record
+
+**Rule:** Make verification repeatable and keep different evidence levels separate.
+Use only the fields relevant to the change; mark unperformed checks as not run.
+
+```text
+Expected behavior:
+Source revision and local changes:
+Build configuration and command:
+Generated artifact and actual load path (hash when useful):
+Environment and initial state:
+Action or test executed:
+Observed result and supporting log/capture:
+Relevant failure-path checks:
+Not verified:
+```
+
+**Example:** For a standalone Setup application, record the built application and
+its ESP destination, the page and interaction exercised, and the observed result.
+Record persistence separately if it is part of the requirement.
+
+**Limit:** Building a host test is not executing it; executing it is not a target
+platform boot test. Report each result at its actual scope.
+
+## 6. Firmware Patch Review Evidence
 
 Use this structure for review comments and summaries:
 

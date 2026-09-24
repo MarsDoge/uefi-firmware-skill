@@ -86,15 +86,90 @@ semantics. In edk2 setup UI work, this often means:
 - If the question asks for upstream wording, make claims narrow and evidence
   based.
 
-## Evidence Ladder
+## Engineering Rules and Examples / 工程规则与例子
 
-Prefer evidence in this order:
+These rules apply across architectures and platforms. Examples illustrate the
+reasoning, not universal implementation requirements or claims of completed tests.
+Keep incident-specific commands and project history out of the core model.
 
-1. Exact source code and build configuration in the user's tree.
-2. Serial log, ASSERT, EFI status, compiler diagnostic, or QEMU command line.
-3. Official specification or upstream project documentation.
-4. Upstream commit history, issue, pull request, or mailing-list discussion.
-5. Reasoned inference, clearly marked as inference.
+### 1. Choose Evidence for the Question / 按问题选择证据
+
+**Rule:** There is no universal evidence ranking. Use the applicable specification
+version and section for normative requirements, exact source and configuration
+for implementation behavior, and execution evidence for observed results. History
+and review discussions explain intent; label inference separately.
+
+**Example:** Linux accepting an ACPI record demonstrates behavior of that consumer
+on the tested path. Check the applicable ACPI record and method constraints before
+calling the encoding compliant.
+
+**Limit:** Consumer acceptance does not establish specification compliance or
+prove that a related operation such as hotplug works.
+
+### 2. Trace the Complete Chain / 检查完整链路
+
+**Rule:** Follow data from producer through interface to consumer. Check identity,
+availability, lifetime, build inclusion, packaging, and actual runtime use before
+claiming a feature is integrated.
+
+**Example:** After building an ACPI generator, check that the platform supplies its
+inputs, the generator is registered in the running image, the generated table is
+installed, and the OS receives the intended data.
+
+**Limit:** A schema that can express the data is not a platform integration.
+Equivalent consumer-visible behavior is also a different claim from byte identity.
+
+### 3. Fix the Owning Layer / 在职责所属层修复
+
+**Rule:** Identify ownership before editing. Prefer the smallest change that fully
+repairs the relevant contract, rather than the fewest changed lines. Keep unrelated
+policy changes and hardening separate.
+
+**Example:** A Setup layout defect may belong to rendering, while an incorrect
+hidden or disabled state may come from form expressions or current configuration.
+Trace the cause instead of forcing visibility in the drawing code.
+
+**Limit:** This is not a blanket preference for display-layer fixes; preserve the
+configuration owner's validation and writeback responsibilities.
+
+### 4. Verify the Artifact Being Run / 确认实际运行产物
+
+**Rule:** Connect the source revision and build configuration to the generated
+artifact and actual load path. Preserve enough information to repeat the test.
+
+**Example:** Rebuilding firmware may leave a standalone UEFI application on the ESP
+unchanged. Confirm or refresh the loaded application before attributing a changed
+result to the patch.
+
+**Limit:** A successful build or a new timestamp alone does not prove that the
+running image contains the change. Track the relevant image, inputs, and logs.
+
+### 5. Test the Promised Behavior / 按目标行为验收
+
+**Rule:** Test the consumer-visible outcome, not just an intermediate success code.
+Cover relevant boundaries, error propagation, and cleanup according to the
+interface contract.
+
+**Example:** For a setting, verify modification, save, reread, and the intended
+visible effect. Reboot if persistence across reboot is required. A failed write
+must not be presented as a successful save.
+
+**Limit:** Persistence is not required for every setting; acceptance follows the
+declared behavior, not a checklist copied from another feature.
+
+### 6. Bound Conclusions by Evidence / 结论不超出证据
+
+**Rule:** Separate static reasoning, reproduced failures, compilation, executed
+tests, and platform compatibility. Report a finding's trigger, impact, evidence,
+and smallest complete remedy. A missing test is not itself a demonstrated bug.
+
+**Example:** A host test checking an ACPI generator's serialized fields supports
+that serialization claim. It does not establish firmware integration or OS boot
+on the target board.
+
+**Limit:** Static analysis can prove a defect without reproduction when the input
+and control flow establish it. State that basis explicitly instead of inventing a
+failed run or treating every hypothetical edge case as a blocker.
 
 ## Answer DNA
 

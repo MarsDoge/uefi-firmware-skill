@@ -51,6 +51,21 @@ setup UI issues, and logs.
 - `EFI_INVALID_PARAMETER` often indicates contract mismatch, buffer size/state,
   or wrong optional field assumptions.
 
+## Controlled Validation / 受控验证
+
+**Rule:** Compare baseline and patched behavior with the relevant environment held
+constant. Record the revision, build configuration, loaded image, boot media, and
+initial variable-store state. Preserve the failing state before testing a fresh
+store, and change one relevant factor at a time.
+
+**Example:** If a changed Setup page still looks identical, confirm the loaded
+application first, then navigate to that page, exercise the affected interaction,
+and inspect both the display and exception/ASSERT logs.
+
+**Limit:** Reaching the boot menu is not validation of a changed page. A screenshot
+proves appearance at that moment, not persistence or successful configuration
+writeback. Use the acceptance behavior to choose the additional checks.
+
 ## Good Debug Answer Pattern
 
 1. Identify the phase and component.

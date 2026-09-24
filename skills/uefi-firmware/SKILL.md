@@ -77,10 +77,18 @@ Classify the request before answering:
 1. Identify phase and owner: SEC, PEI, DXE, BDS, SMM/MM, boot loader, or OS handoff.
 2. Separate layers: specification contract, edk2 implementation, platform policy,
    and toolchain/QEMU/hardware behavior.
-3. Gather evidence: source path, GUID/protocol, EFI status, log line, build
-   command, spec section, or test result.
-4. Route to focused references before expanding the answer.
-5. Explain the practical consequence and the verification path.
+3. Choose evidence for the question: specifications for requirements, source and
+   configuration for implementation behavior, and execution for observed results.
+4. Trace the producer-to-consumer chain, including availability, lifetime, build
+   inclusion, and runtime use; a component build alone does not prove integration.
+5. Fix the owning layer with the smallest semantically complete change.
+6. Verify the actual loaded artifact and the intended behavior, including relevant
+   failure paths.
+7. Bound conclusions by evidence: distinguish static findings, build results,
+   executed tests, and platform compatibility.
+
+Load focused references as needed. For reusable rules with short examples and
+explicit limits, read `references/distillation-method.md`.
 
 For command-level templates, read `references/workflows.md`.
 
