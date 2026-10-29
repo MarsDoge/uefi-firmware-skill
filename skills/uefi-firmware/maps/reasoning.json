@@ -1,0 +1,20 @@
+{
+  "title": "UEFI Firmware · 从问题到证据",
+  "subtitle": "人看图，Agent 按路径读取；这是工程决策流程，不是模型内部思维记录。",
+  "nodes": [
+    {"id":"scope","title":"01 定义问题","question":"要解释、排障，还是审核补丁？","action":"记录目标、现象、架构与已知条件；缺少关键输入时先收集，不猜测。","output":"明确目标与未知条件","refs":["references/distillation-method.md"]},
+    {"id":"locate","title":"02 定位阶段与职责","question":"问题发生在哪里，谁拥有它？","action":"定位启动阶段，跟踪生产者 → 接口 → 消费者；检查依赖何时可用。概念问题只定位相关阶段与接口。","output":"阶段、责任组件与依赖","refs":["references/edk2-map.md","references/distillation-method.md"]},
+    {"id":"evidence","title":"03 选择并收集依据","question":"这是规范要求，还是具体实现？","action":"区分规范契约、edk2 实现、平台策略和工具行为；按问题读取适用规范、当前源码与配置、日志。","output":"可追溯依据及适用条件","refs":["references/uefi-spec-map.md","references/debugging-map.md"]},
+    {"id":"decide","title":"04 提出判断或修复","question":"证据支持什么？怎样验证？","action":"解释类给出有边界的结论；排障类提出可检验假设；补丁类选择职责所属层的最小完整修复，检查兼容与失败路径。","output":"候选结论、假设或修复方案","refs":["references/distillation-method.md","references/upstreaming.md"]},
+    {"id":"verify","title":"05 验证目标行为","question":"验证了目标行为，还是中间步骤？","action":"按主张选择验证：规范与源码核对，或基线对照、目标架构构建、实际产物运行。检查相关失败路径；证据不足则返回定位，不把未测当作通过。","output":"验证结果、失败证据或明确缺口","refs":["references/debugging-map.md","references/workflows.md"]},
+    {"id":"distill","title":"06 输出并沉淀","question":"结论适用哪里？哪些仍未知？","action":"报告结论、依据、验证范围和缺口；可复用经验整理为规则 → 例子 → 边界，经审核后更新，不能把单次案例泛化为标准。","output":"可使用的答案与候选经验","refs":["references/distillation-method.md","references/upstreaming.md"]}
+  ],
+  "edges":[["scope","locate"],["locate","evidence"],["evidence","decide"],["decide","verify"],["verify","distill"],["verify","locate"]],
+  "routes":[
+    {"query":"术语、标准、规范是否合法","refs":["references/uefi-spec-map.md","references/distillation-method.md"]},
+    {"query":"模块职责、接口、初始化依赖","refs":["references/edk2-map.md","references/distillation-method.md"]},
+    {"query":"构建失败、异常、启动项缺失、旧产物","refs":["references/debugging-map.md","references/workflows.md"]},
+    {"query":"HII / Setup 显示与设置写回","refs":["references/edk2-map.md","references/debugging-map.md"]},
+    {"query":"补丁正确性、兼容性与失败清理","refs":["references/distillation-method.md","references/upstreaming.md"]}
+  ]
+}

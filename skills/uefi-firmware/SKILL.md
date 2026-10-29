@@ -26,6 +26,39 @@ Prefer bilingual answers when useful: Chinese explanations are welcome, but keep
 official English terms such as `Protocol`, `Handle`, `HOB`, `DXE`, `HII`, `VFR`,
 `IFR`, `FormBrowser`, `ConfigAccess`, `Secure Boot`, and `SMBIOS` intact.
 
+## Start Here / 阅读入口
+
+Use this compact decision flow; load only the reference needed for the question:
+
+`Define the question → locate phase/owner → collect evidence → propose a judgment or fix → verify → report and distill`
+
+If evidence is insufficient or a hypothesis fails, return to phase/owner and
+collect new evidence. Adapt the steps to the task: conceptual explanations do not
+require a build; runtime claims require corresponding execution evidence.
+
+| Question / 问题 | Read first / 优先读取 |
+| --- | --- |
+| Terminology or specification compliance / 术语与规范 | `references/uefi-spec-map.md` |
+| Module ownership or initialization / 职责与初始化 | `references/edk2-map.md` |
+| Build, crash, boot entries, loaded artifacts / 构建、异常与启动 | `references/debugging-map.md` |
+| HII / Setup rendering and writeback / 显示与写回 | `references/edk2-map.md`, then `references/debugging-map.md` |
+| Patch compatibility or failure cleanup / 补丁兼容与失败清理 | `references/distillation-method.md`, then `references/upstreaming.md` |
+| Concrete command templates / 命令模板 | `references/workflows.md` |
+
+For the complete explicit workflow, read `references/decision-flow.md`.
+For cross-topic discovery, use `maps/network.json`: stable node IDs, typed directed
+relations, and exact source paths/lines/excerpts. Search or expand without loading
+the entire graph using `python3 scripts/query_network.py --search 'BootOrder'`
+or `python3 scripts/query_network.py --node boot --depth 2 --kind semantic` from
+the skill directory. Traversal uses undirected adjacency for discovery, not causal
+inference. Follow the source reference before applying a rule.
+Humans can open the standalone `maps/network.html` to explore all recorded links;
+`maps/network.svg` is its static overview. The sequential flow remains in
+`maps/reasoning.svg` and `maps/preview.html`. Agents do not need image recognition
+or a diagram renderer. Do not load the entire reference
+library by default. Report conclusions, evidence, scope, and missing checks,
+not private internal reasoning.
+
 ## Distilled Reasoning Reference / 蒸馏推理参考
 
 This skill includes a distilled firmware-reasoning note/reference alongside the
@@ -98,14 +131,15 @@ Load only the reference needed for the current task:
 
 - For practical command-level templates and evidence collection, read
   `references/workflows.md`.
-- For the included distilled reasoning reference, read
-  `references/distillation-method.md`.
+- For distilled reasoning, call-time dependency checks, interface evolution, and
+  failure ownership, read `references/distillation-method.md`.
 - For UEFI/PI/ACPI/SMBIOS/TCG/Secure Boot standard boundaries and official links,
   read `references/uefi-spec-map.md`.
 - For edk2 packages, build files, firmware phases, HII, protocols, and library
   patterns, read `references/edk2-map.md`.
-- For QEMU, serial logs, ASSERTs, build failures, EFI status values, and setup UI
-  debugging, read `references/debugging-map.md`.
+- For QEMU, serial logs, ASSERTs, build failures, EFI status values, setup UI,
+  build-to-run tracing, cross-architecture faults, and missing boot entries,
+  read `references/debugging-map.md`.
 - For patch review, commit messages, copyright, sign-off, and mailing-list or PR
   wording, read `references/upstreaming.md`.
 

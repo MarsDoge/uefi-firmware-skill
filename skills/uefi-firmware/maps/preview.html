@@ -1,0 +1,57 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>UEFI Skill 流程预览</title><style>body{margin:0;background:#f8fafc;color:#172033;font:17px/1.7 system-ui,sans-serif}main{max-width:1200px;margin:auto;padding:16px}svg{width:100%;height:auto}details{background:#ffffff;border:1px solid #cbd5e1;border-radius:12px;padding:18px;margin:14px 0}summary{cursor:pointer;color:#1d4ed8;font-size:21px}a{color:#065f46}code{color:#92400e}footer{color:#475569;padding:24px 0}</style><main>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1020" viewBox="0 0 1200 1020" role="img" aria-labelledby="title desc">
+<title id="title">UEFI Firmware 工程决策流程</title><desc id="desc">定义问题、定位职责、收集依据、提出判断、验证目标、输出沉淀；验证不足时返回定位。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1d4ed8"/></marker></defs>
+<rect width="1200" height="1020" fill="#f8fafc"/>
+<g font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif">
+<text x="60" y="60" fill="#0f172a" font-size="30">UEFI Firmware · 从问题到证据</text>
+<text x="60" y="98" fill="#475569" font-size="17">同一流程，两种入口：人看关系，Agent 按需查阅</text>
+<path d="M 390 240 L 440 240" fill="none" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 770 240 L 820 240" fill="none" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 985 335 L 985 425" fill="none" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 820 520 L 770 520" fill="none" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 440 520 L 390 520" fill="none" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 605 425 L 605 335" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrow)"/>
+<text x="618" y="385" fill="#92400e" font-size="16">证据不足 / 假设不成立</text>
+<rect x="60" y="145" width="330" height="190" rx="16" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="80" y="185" fill="#1d4ed8" font-size="22">01 定义问题</text>
+<text x="80" y="223" fill="#0f172a" font-size="17">要解释、排障，还是审核补丁？</text>
+<text x="80" y="302" fill="#475569" font-size="15">产出：明确目标与未知条件</text>
+<rect x="440" y="145" width="330" height="190" rx="16" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="460" y="185" fill="#1d4ed8" font-size="22">02 定位阶段与职责</text>
+<text x="460" y="223" fill="#0f172a" font-size="17">问题发生在哪里，谁拥有它？</text>
+<text x="460" y="302" fill="#475569" font-size="15">产出：阶段、责任组件与依赖</text>
+<rect x="820" y="145" width="330" height="190" rx="16" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="840" y="185" fill="#1d4ed8" font-size="22">03 选择并收集依据</text>
+<text x="840" y="223" fill="#0f172a" font-size="17">这是规范要求，还是具体实现？</text>
+<text x="840" y="302" fill="#475569" font-size="15">产出：可追溯依据及适用条件</text>
+<rect x="820" y="425" width="330" height="190" rx="16" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="840" y="465" fill="#1d4ed8" font-size="22">04 提出判断或修复</text>
+<text x="840" y="503" fill="#0f172a" font-size="17">证据支持什么？怎样验证？</text>
+<text x="840" y="582" fill="#475569" font-size="15">产出：候选结论、假设或修复方案</text>
+<rect x="440" y="425" width="330" height="190" rx="16" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="460" y="465" fill="#1d4ed8" font-size="22">05 验证目标行为</text>
+<text x="460" y="503" fill="#0f172a" font-size="17">验证了目标行为，还是中间步骤？</text>
+<text x="460" y="582" fill="#475569" font-size="15">产出：验证结果、失败证据或明确缺口</text>
+<rect x="60" y="425" width="330" height="190" rx="16" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="80" y="465" fill="#1d4ed8" font-size="22">06 输出并沉淀</text>
+<text x="80" y="503" fill="#0f172a" font-size="17">结论适用哪里？哪些仍未知？</text>
+<text x="80" y="582" fill="#475569" font-size="15">产出：可使用的答案与候选经验</text>
+<text x="60" y="690" fill="#0f172a" font-size="23">始终区分四层依据</text>
+<rect x="60" y="715" width="255" height="60" rx="12" fill="#ecfdf5"/><text x="85" y="753" fill="#065f46" font-size="21">规范契约</text>
+<rect x="345" y="715" width="255" height="60" rx="12" fill="#ecfdf5"/><text x="370" y="753" fill="#065f46" font-size="21">edk2 实现</text>
+<rect x="630" y="715" width="255" height="60" rx="12" fill="#ecfdf5"/><text x="655" y="753" fill="#065f46" font-size="21">平台策略</text>
+<rect x="915" y="715" width="255" height="60" rx="12" fill="#ecfdf5"/><text x="940" y="753" fill="#065f46" font-size="21">工具行为</text>
+<text x="60" y="830" fill="#334155" font-size="18">人：先看全局，再到预览页展开步骤与参考。</text>
+<text x="60" y="869" fill="#334155" font-size="18">Agent：先读 SKILL.md，按问题选参考；无须识图，也不必读完整库。</text>
+<text x="60" y="908" fill="#334155" font-size="18">边界：编译通过 ≠ 运行验证；案例成立 ≠ 通用标准；缺少证据 ≠ 已证明错误。</text>
+<text x="60" y="947" fill="#334155" font-size="18">图中步骤按任务裁剪：概念解释无需强行构建，运行主张必须有对应执行证据。</text>
+</g></svg>
+<h2>展开步骤，查看动作与资料</h2>
+<details><summary>01 定义问题</summary><p>记录目标、现象、架构与已知条件；缺少关键输入时先收集，不猜测。</p><p>产出：明确目标与未知条件</p><p>参考：<a href="../references/distillation-method.md">distillation-method.md</a></p></details>
+<details><summary>02 定位阶段与职责</summary><p>定位启动阶段，跟踪生产者 → 接口 → 消费者；检查依赖何时可用。概念问题只定位相关阶段与接口。</p><p>产出：阶段、责任组件与依赖</p><p>参考：<a href="../references/edk2-map.md">edk2-map.md</a> · <a href="../references/distillation-method.md">distillation-method.md</a></p></details>
+<details><summary>03 选择并收集依据</summary><p>区分规范契约、edk2 实现、平台策略和工具行为；按问题读取适用规范、当前源码与配置、日志。</p><p>产出：可追溯依据及适用条件</p><p>参考：<a href="../references/uefi-spec-map.md">uefi-spec-map.md</a> · <a href="../references/debugging-map.md">debugging-map.md</a></p></details>
+<details><summary>04 提出判断或修复</summary><p>解释类给出有边界的结论；排障类提出可检验假设；补丁类选择职责所属层的最小完整修复，检查兼容与失败路径。</p><p>产出：候选结论、假设或修复方案</p><p>参考：<a href="../references/distillation-method.md">distillation-method.md</a> · <a href="../references/upstreaming.md">upstreaming.md</a></p></details>
+<details><summary>05 验证目标行为</summary><p>按主张选择验证：规范与源码核对，或基线对照、目标架构构建、实际产物运行。检查相关失败路径；证据不足则返回定位，不把未测当作通过。</p><p>产出：验证结果、失败证据或明确缺口</p><p>参考：<a href="../references/debugging-map.md">debugging-map.md</a> · <a href="../references/workflows.md">workflows.md</a></p></details>
+<details><summary>06 输出并沉淀</summary><p>报告结论、依据、验证范围和缺口；可复用经验整理为规则 → 例子 → 边界，经审核后更新，不能把单次案例泛化为标准。</p><p>产出：可使用的答案与候选经验</p><p>参考：<a href="../references/distillation-method.md">distillation-method.md</a> · <a href="../references/upstreaming.md">upstreaming.md</a></p></details>
+<h2>Agent 的阅读入口</h2><p>读取 SKILL.md → 按问题选择参考 → 如需完整流程，读取 references/decision-flow.md。JSON 是维护与工具接口，不要求 Agent 每次读取。</p><footer>源文件：maps/reasoning.json。SVG、此预览和 decision-flow.md 由同一脚本生成。案例是方法示例，不代表本轮完成了固件实测。</footer></main></html>

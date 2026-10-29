@@ -12,6 +12,65 @@ The skill includes a distilled reasoning reference for firmware work: classify
 the phase, separate specification contracts from edk2 implementation details,
 inspect source and logs before guessing, and keep compatibility evidence visible.
 
+## Relationship Network / 单点展开的关系网
+
+![UEFI skill relationship network](skills/uefi-firmware/maps/network.svg)
+
+这张图展示全部已收录关系，不只是一条顺序流程。节点包括公开参考文档和经验主题；
+关系分为文档引用、文档到主题索引、有原文依据的主题关系。不声称穷尽文档的所有隐含
+含义或全部 UEFI 知识，也不包含本机私有笔记。
+
+**Interactive / 交互版：** [network.html](skills/uefi-firmware/maps/network.html)
+（GitHub 文件页显示源码；下载该 HTML 后用浏览器打开即可，无服务、无 CDN、无需配套文件。）
+
+- 点击任意节点，展开一层、两层或全部连通关系；点击“全局关系”恢复全部节点。
+- 搜索节点、按关系类型筛选、滚轮缩放、拖动空白平移、拖动节点调整布局。
+- 点连线查看方向、含义和原文依据；原文已内嵌，可离线阅读。
+- 展开使用双向邻接，目的是导航，不把相连路径自动当成因果链。
+
+**Agent / 无需识图：** 先读 `SKILL.md` 的问题路由；需要探索关联时，读取
+`maps/network.json` 或使用只读查询脚本：
+
+```sh
+python3 skills/uefi-firmware/scripts/query_network.py --search '启动项'
+python3 skills/uefi-firmware/scripts/query_network.py --node boot --depth 2 --kind semantic
+```
+
+数据保留稳定节点 ID、关系类型、方向、来源路径、行号和原文摘录。它是当前 skill
+的索引，不替代参考文档或对当前源码的验证。关键词查询不使用模型或语义检索服务。
+
+**Maintenance / 更新：** 在 `maps/network-source.json` 编辑主题和带依据的关系；
+文档之间的明确引用自动提取。模板在 `maps/network-template.html`。运行：
+
+```sh
+python3 skills/uefi-firmware/scripts/render_reasoning.py
+python3 skills/uefi-firmware/scripts/render_network.py
+python3 skills/uefi-firmware/scripts/render_network.py --check
+python3 skills/uefi-firmware/scripts/test_network.py
+```
+
+生成器会检查来源摘录是否仍与文档一致；不再匹配时失败，而不是悄悄保留过期关系。
+
+## Decision Flow / 顺序判断流程
+
+![UEFI firmware decision flow](skills/uefi-firmware/maps/reasoning.svg)
+
+先明确问题，定位阶段与职责，再选择依据、提出判断、验证目标；证据不足就返回定位。
+这是一套可检查的工程决策流程，不是模型内部思维记录。
+
+- **For humans / 人看图:** Open `skills/uefi-firmware/maps/preview.html` locally
+  to expand each step and follow its reference links. The SVG above works without
+  running a service.
+- **For agents / Agent 读入口:** Start with `skills/uefi-firmware/SKILL.md` and
+  choose references by question. Read `references/decision-flow.md` only when the
+  full workflow is needed. Image recognition is not required.
+- **For maintainers / 维护者:** Edit `skills/uefi-firmware/maps/reasoning.json`,
+  then run `python3 skills/uefi-firmware/scripts/render_reasoning.py` to regenerate
+  SVG, HTML, and the text workflow. The generator uses the Python standard library.
+
+No database, hosted API, or vendor-specific agent runtime is needed to read this
+skill. The diagrams explain the workflow; the references carry its detail and limits.
+
 ## Included Reasoning Reference / 推理参考
 
 This skill includes a Nuwa-inspired distilled reasoning note in
@@ -84,7 +143,10 @@ Restart the agent runtime after installation if it only loads skills at startup.
 skills/uefi-firmware/
 |-- SKILL.md
 |-- agents/openai.yaml        # optional OpenAI/Codex-compatible metadata
+|-- maps/                     # network + sequential flow, sources and generated views
+|-- scripts/                  # generators, read-only graph query, regression tests
 `-- references/
+    |-- decision-flow.md      # generated text version of the sequential flow
     |-- debugging-map.md
     |-- distillation-method.md
     |-- edk2-map.md

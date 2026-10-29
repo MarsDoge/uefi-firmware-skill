@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1840" height="1340" viewBox="0 0 1840 1340" role="img" aria-labelledby="title desc">
+<title id="title">UEFI Skill 关系网络</title><desc id="desc">节点包括参考文档和经验主题。线连接文档引用、主题索引和有来源的语义关系；交互版可点选和展开。</desc>
+<rect width="1840" height="1340" fill="#f8fafc"/>
+<g font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif">
+<text x="48" y="42" fill="#0f172a" font-size="28">UEFI Skill · 全局关系网络</text>
+<text x="48" y="72" fill="#475569" font-size="17">30 个节点 · 61 条关系 · 实线：主题关系 / 虚线：引用与索引 · 点击阅读节点来源</text>
+<line x1="695.8" y1="787.54" x2="792.44" y2="1157.68" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>distillation-method.md → 说明 → 启动阶段</title></line>
+<line x1="695.8" y1="787.54" x2="967.84" y2="591.13" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>distillation-method.md → 说明 → 生产者 / 消费者</title></line>
+<line x1="695.8" y1="787.54" x2="689.26" y2="962.56" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>distillation-method.md → 说明 → 初始化依赖</title></line>
+<line x1="695.8" y1="787.54" x2="959.36" y2="1001.98" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>distillation-method.md → 说明 → 规范契约</title></line>
+<line x1="695.8" y1="787.54" x2="522.34" y2="1145.82" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>distillation-method.md → 说明 → edk2 实现</title></line>
+<line x1="695.8" y1="787.54" x2="881.61" y2="678.1" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>distillation-method.md → 说明 → 平台策略</title></line>
+<line x1="695.8" y1="787.54" x2="464.3" y2="592.51" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>distillation-method.md → 说明 → 工具与编译行为</title></line>
+<line x1="831.42" y1="404.8" x2="413.59" y2="354.09" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>debugging-map.md → 说明 → 实际运行产物</title></line>
+<line x1="695.8" y1="787.54" x2="743.06" y2="515.03" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>distillation-method.md → 说明 → 目标行为验证</title></line>
+<line x1="695.8" y1="787.54" x2="377.0" y2="813.91" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>distillation-method.md → 说明 → 证据与结论边界</title></line>
+<line x1="695.8" y1="787.54" x2="194.2" y2="596.71" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>distillation-method.md → 说明 → 接口兼容</title></line>
+<line x1="695.8" y1="787.54" x2="535.64" y2="438.98" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>distillation-method.md → 说明 → 失败路径与资源</title></line>
+<line x1="831.42" y1="404.8" x2="364.49" y2="135.0" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>debugging-map.md → 说明 → 地址与重定位</title></line>
+<line x1="831.42" y1="404.8" x2="544.74" y2="211.1" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>debugging-map.md → 说明 → 栈帧与反汇编</title></line>
+<line x1="831.42" y1="404.8" x2="814.84" y2="213.72" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>debugging-map.md → 说明 → 设备可见 / 启动项缺失</title></line>
+<line x1="831.42" y1="404.8" x2="994.52" y2="137.62" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>debugging-map.md → 说明 → Boot#### / BootOrder</title></line>
+<line x1="1426.13" y1="547.0" x2="1549.48" y2="157.68" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>edk2-map.md → 说明 → HII / VFR / IFR</title></line>
+<line x1="1426.13" y1="547.0" x2="1629.34" y2="361.53" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>edk2-map.md → 说明 → FormBrowser 语义</title></line>
+<line x1="1426.13" y1="547.0" x2="1359.24" y2="305.63" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>edk2-map.md → 说明 → 显示与渲染</title></line>
+<line x1="1426.13" y1="547.0" x2="1183.92" y2="381.73" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>edk2-map.md → 说明 → 配置写回</title></line>
+<line x1="1313.02" y1="1052.84" x2="1170.67" y2="727.47" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>uefi-spec-map.md → 说明 → Secure Boot</title></line>
+<line x1="1313.02" y1="1052.84" x2="1458.71" y2="892.52" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>uefi-spec-map.md → 说明 → Measured Boot / TPM</title></line>
+<line x1="792.44" y1="1157.68" x2="689.26" y2="962.56" stroke="#475569" stroke-width="2"><title>启动阶段 → 检查可用时机 → 初始化依赖</title></line>
+<line x1="967.84" y1="591.13" x2="689.26" y2="962.56" stroke="#475569" stroke-width="2"><title>生产者 / 消费者 → 检查可用性 → 初始化依赖</title></line>
+<line x1="959.36" y1="1001.98" x2="522.34" y2="1145.82" stroke="#475569" stroke-width="2"><title>规范契约 → 区分 → edk2 实现</title></line>
+<line x1="959.36" y1="1001.98" x2="881.61" y2="678.1" stroke="#475569" stroke-width="2"><title>规范契约 → 区分 → 平台策略</title></line>
+<line x1="464.3" y1="592.51" x2="413.59" y2="354.09" stroke="#475569" stroke-width="2"><title>工具与编译行为 → 核查生成链 → 实际运行产物</title></line>
+<line x1="413.59" y1="354.09" x2="743.06" y2="515.03" stroke="#475569" stroke-width="2"><title>实际运行产物 → 先确认加载对象 → 目标行为验证</title></line>
+<line x1="743.06" y1="515.03" x2="377.0" y2="813.91" stroke="#475569" stroke-width="2"><title>目标行为验证 → 限制结论范围 → 证据与结论边界</title></line>
+<line x1="743.06" y1="515.03" x2="535.64" y2="438.98" stroke="#475569" stroke-width="2"><title>目标行为验证 → 覆盖失败路径 → 失败路径与资源</title></line>
+<line x1="194.2" y1="596.71" x2="535.64" y2="438.98" stroke="#475569" stroke-width="2"><title>接口兼容 → 一并检查所有权 → 失败路径与资源</title></line>
+<line x1="535.64" y1="438.98" x2="967.84" y2="591.13" stroke="#475569" stroke-width="2"><title>失败路径与资源 → 尊重资源归属 → 生产者 / 消费者</title></line>
+<line x1="364.49" y1="135.0" x2="413.59" y2="354.09" stroke="#475569" stroke-width="2"><title>地址与重定位 → 要求匹配构建 → 实际运行产物</title></line>
+<line x1="364.49" y1="135.0" x2="544.74" y2="211.1" stroke="#475569" stroke-width="2"><title>地址与重定位 → 共同定位异常 → 栈帧与反汇编</title></line>
+<line x1="544.74" y1="211.1" x2="464.3" y2="592.51" stroke="#475569" stroke-width="2"><title>栈帧与反汇编 → 检查生成代码 → 工具与编译行为</title></line>
+<line x1="814.84" y1="213.72" x2="994.52" y2="137.62" stroke="#475569" stroke-width="2"><title>设备可见 / 启动项缺失 → 检查持久化路径 → Boot#### / BootOrder</title></line>
+<line x1="814.84" y1="213.72" x2="881.61" y2="678.1" stroke="#475569" stroke-width="2"><title>设备可见 / 启动项缺失 → 核对准入条件 → 平台策略</title></line>
+<line x1="994.52" y1="137.62" x2="743.06" y2="515.03" stroke="#475569" stroke-width="2"><title>Boot#### / BootOrder → 保留原始状态 → 目标行为验证</title></line>
+<line x1="1549.48" y1="157.68" x2="1629.34" y2="361.53" stroke="#475569" stroke-width="2"><title>HII / VFR / IFR → 由其解释 → FormBrowser 语义</title></line>
+<line x1="1629.34" y1="361.53" x2="1359.24" y2="305.63" stroke="#475569" stroke-width="2"><title>FormBrowser 语义 → 语义与显示分工 → 显示与渲染</title></line>
+<line x1="1629.34" y1="361.53" x2="1183.92" y2="381.73" stroke="#475569" stroke-width="2"><title>FormBrowser 语义 → 调用配置接口 → 配置写回</title></line>
+<line x1="1183.92" y1="381.73" x2="967.84" y2="591.13" stroke="#475569" stroke-width="2"><title>配置写回 → 经所属驱动写回 → 生产者 / 消费者</title></line>
+<line x1="1183.92" y1="381.73" x2="743.06" y2="515.03" stroke="#475569" stroke-width="2"><title>配置写回 → 检查保存与效果 → 目标行为验证</title></line>
+<line x1="1359.24" y1="305.63" x2="967.84" y2="591.13" stroke="#475569" stroke-width="2"><title>显示与渲染 → 定位显示职责 → 生产者 / 消费者</title></line>
+<line x1="1170.67" y1="727.47" x2="1458.71" y2="892.52" stroke="#475569" stroke-width="2"><title>Secure Boot → 区分规范边界 → Measured Boot / TPM</title></line>
+<line x1="1170.67" y1="727.47" x2="881.61" y2="678.1" stroke="#475569" stroke-width="2"><title>Secure Boot → 区分实现与策略 → 平台策略</title></line>
+<line x1="1170.67" y1="727.47" x2="959.36" y2="1001.98" stroke="#475569" stroke-width="2"><title>Secure Boot → 归属 UEFI → 规范契约</title></line>
+<line x1="1458.71" y1="892.52" x2="959.36" y2="1001.98" stroke="#475569" stroke-width="2"><title>Measured Boot / TPM → 归属 TCG → 规范契约</title></line>
+<line x1="1067.0" y1="879.62" x2="1313.02" y2="1052.84" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>SKILL.md → 引用 → uefi-spec-map.md</title></line>
+<line x1="1067.0" y1="879.62" x2="1426.13" y2="547.0" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>SKILL.md → 引用 → edk2-map.md</title></line>
+<line x1="1067.0" y1="879.62" x2="831.42" y2="404.8" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>SKILL.md → 引用 → debugging-map.md</title></line>
+<line x1="1067.0" y1="879.62" x2="695.8" y2="787.54" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>SKILL.md → 引用 → distillation-method.md</title></line>
+<line x1="1067.0" y1="879.62" x2="1473.12" y2="1131.13" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>SKILL.md → 引用 → upstreaming.md</title></line>
+<line x1="1067.0" y1="879.62" x2="1168.96" y2="1157.68" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>SKILL.md → 引用 → workflows.md</title></line>
+<line x1="1067.0" y1="879.62" x2="1271.97" y2="803.52" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>SKILL.md → 引用 → decision-flow.md</title></line>
+<line x1="1271.97" y1="803.52" x2="695.8" y2="787.54" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>decision-flow.md → 引用 → distillation-method.md</title></line>
+<line x1="1271.97" y1="803.52" x2="1426.13" y2="547.0" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>decision-flow.md → 引用 → edk2-map.md</title></line>
+<line x1="1271.97" y1="803.52" x2="1313.02" y2="1052.84" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>decision-flow.md → 引用 → uefi-spec-map.md</title></line>
+<line x1="1271.97" y1="803.52" x2="831.42" y2="404.8" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>decision-flow.md → 引用 → debugging-map.md</title></line>
+<line x1="1271.97" y1="803.52" x2="1473.12" y2="1131.13" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>decision-flow.md → 引用 → upstreaming.md</title></line>
+<line x1="1271.97" y1="803.52" x2="1168.96" y2="1157.68" stroke="#7b8ba1" stroke-width="2" stroke-dasharray="4 6"><title>decision-flow.md → 引用 → workflows.md</title></line>
+<a href="../SKILL.md"><rect x="1002.0" y="861.62" width="130" height="36" rx="9" fill="#ffffff" stroke="#475569"/>
+<text x="1067.0" y="885.62" text-anchor="middle" fill="#475569" font-size="18">SKILL.md</text>
+</a>
+<a href="../references/debugging-map.md"><rect x="747.42" y="386.8" width="168" height="36" rx="9" fill="#ffffff" stroke="#475569"/>
+<text x="831.42" y="410.8" text-anchor="middle" fill="#475569" font-size="18">debugging-map.md</text>
+</a>
+<a href="../references/decision-flow.md"><rect x="1187.97" y="785.52" width="168" height="36" rx="9" fill="#ffffff" stroke="#475569"/>
+<text x="1271.97" y="809.52" text-anchor="middle" fill="#475569" font-size="18">decision-flow.md</text>
+</a>
+<a href="../references/distillation-method.md"><rect x="584.8" y="769.54" width="222" height="36" rx="9" fill="#ffffff" stroke="#475569"/>
+<text x="695.8" y="793.54" text-anchor="middle" fill="#475569" font-size="18">distillation-method.md</text>
+</a>
+<a href="../references/edk2-map.md"><rect x="1361.13" y="529.0" width="130" height="36" rx="9" fill="#ffffff" stroke="#475569"/>
+<text x="1426.13" y="553.0" text-anchor="middle" fill="#475569" font-size="18">edk2-map.md</text>
+</a>
+<a href="../references/uefi-spec-map.md"><rect x="1229.02" y="1034.84" width="168" height="36" rx="9" fill="#ffffff" stroke="#475569"/>
+<text x="1313.02" y="1058.84" text-anchor="middle" fill="#475569" font-size="18">uefi-spec-map.md</text>
+</a>
+<a href="../references/upstreaming.md"><rect x="1398.12" y="1113.13" width="150" height="36" rx="9" fill="#ffffff" stroke="#475569"/>
+<text x="1473.12" y="1137.13" text-anchor="middle" fill="#475569" font-size="18">upstreaming.md</text>
+</a>
+<a href="../references/workflows.md"><rect x="1102.96" y="1139.68" width="132" height="36" rx="9" fill="#ffffff" stroke="#475569"/>
+<text x="1168.96" y="1163.68" text-anchor="middle" fill="#475569" font-size="18">workflows.md</text>
+</a>
+<a href="../references/distillation-method.md"><rect x="727.44" y="1139.68" width="130" height="36" rx="9" fill="#ffffff" stroke="#1d4ed8"/>
+<text x="792.44" y="1163.68" text-anchor="middle" fill="#1d4ed8" font-size="18">启动阶段</text>
+</a>
+<a href="../references/distillation-method.md"><rect x="888.34" y="573.13" width="159" height="36" rx="9" fill="#ffffff" stroke="#1d4ed8"/>
+<text x="967.84" y="597.13" text-anchor="middle" fill="#1d4ed8" font-size="18">生产者 / 消费者</text>
+</a>
+<a href="../references/distillation-method.md"><rect x="624.26" y="944.56" width="130" height="36" rx="9" fill="#ffffff" stroke="#1d4ed8"/>
+<text x="689.26" y="968.56" text-anchor="middle" fill="#1d4ed8" font-size="18">初始化依赖</text>
+</a>
+<a href="../references/distillation-method.md"><rect x="894.36" y="983.98" width="130" height="36" rx="9" fill="#ffffff" stroke="#7e22ce"/>
+<text x="959.36" y="1007.98" text-anchor="middle" fill="#7e22ce" font-size="18">规范契约</text>
+</a>
+<a href="../references/distillation-method.md"><rect x="457.34000000000003" y="1127.82" width="130" height="36" rx="9" fill="#ffffff" stroke="#7e22ce"/>
+<text x="522.34" y="1151.82" text-anchor="middle" fill="#7e22ce" font-size="18">edk2 实现</text>
+</a>
+<a href="../references/distillation-method.md"><rect x="816.61" y="660.1" width="130" height="36" rx="9" fill="#ffffff" stroke="#7e22ce"/>
+<text x="881.61" y="684.1" text-anchor="middle" fill="#7e22ce" font-size="18">平台策略</text>
+</a>
+<a href="../references/distillation-method.md"><rect x="389.3" y="574.51" width="150" height="36" rx="9" fill="#ffffff" stroke="#7e22ce"/>
+<text x="464.3" y="598.51" text-anchor="middle" fill="#7e22ce" font-size="18">工具与编译行为</text>
+</a>
+<a href="../references/debugging-map.md"><rect x="347.59" y="336.09" width="132" height="36" rx="9" fill="#ffffff" stroke="#047857"/>
+<text x="413.59" y="360.09" text-anchor="middle" fill="#047857" font-size="18">实际运行产物</text>
+</a>
+<a href="../references/distillation-method.md"><rect x="677.06" y="497.03" width="132" height="36" rx="9" fill="#ffffff" stroke="#047857"/>
+<text x="743.06" y="521.03" text-anchor="middle" fill="#047857" font-size="18">目标行为验证</text>
+</a>
+<a href="../references/distillation-method.md"><rect x="302.0" y="795.91" width="150" height="36" rx="9" fill="#ffffff" stroke="#047857"/>
+<text x="377.0" y="819.91" text-anchor="middle" fill="#047857" font-size="18">证据与结论边界</text>
+</a>
+<a href="../references/distillation-method.md"><rect x="129.2" y="578.71" width="130" height="36" rx="9" fill="#ffffff" stroke="#92400e"/>
+<text x="194.2" y="602.71" text-anchor="middle" fill="#92400e" font-size="18">接口兼容</text>
+</a>
+<a href="../references/distillation-method.md"><rect x="460.64" y="420.98" width="150" height="36" rx="9" fill="#ffffff" stroke="#92400e"/>
+<text x="535.64" y="444.98" text-anchor="middle" fill="#92400e" font-size="18">失败路径与资源</text>
+</a>
+<a href="../references/debugging-map.md"><rect x="298.49" y="117.0" width="132" height="36" rx="9" fill="#ffffff" stroke="#be123c"/>
+<text x="364.49" y="141.0" text-anchor="middle" fill="#be123c" font-size="18">地址与重定位</text>
+</a>
+<a href="../references/debugging-map.md"><rect x="478.74" y="193.1" width="132" height="36" rx="9" fill="#ffffff" stroke="#be123c"/>
+<text x="544.74" y="217.1" text-anchor="middle" fill="#be123c" font-size="18">栈帧与反汇编</text>
+</a>
+<a href="../references/debugging-map.md"><rect x="708.34" y="195.72" width="213" height="36" rx="9" fill="#ffffff" stroke="#be123c"/>
+<text x="814.84" y="219.72" text-anchor="middle" fill="#be123c" font-size="18">设备可见 / 启动项缺失</text>
+</a>
+<a href="../references/debugging-map.md"><rect x="892.52" y="119.62" width="204" height="36" rx="9" fill="#ffffff" stroke="#92400e"/>
+<text x="994.52" y="143.62" text-anchor="middle" fill="#92400e" font-size="18">Boot#### / BootOrder</text>
+</a>
+<a href="../references/edk2-map.md"><rect x="1469.98" y="139.68" width="159" height="36" rx="9" fill="#ffffff" stroke="#92400e"/>
+<text x="1549.48" y="163.68" text-anchor="middle" fill="#92400e" font-size="18">HII / VFR / IFR</text>
+</a>
+<a href="../references/edk2-map.md"><rect x="1545.34" y="343.53" width="168" height="36" rx="9" fill="#ffffff" stroke="#92400e"/>
+<text x="1629.34" y="367.53" text-anchor="middle" fill="#92400e" font-size="18">FormBrowser 语义</text>
+</a>
+<a href="../references/edk2-map.md"><rect x="1294.24" y="287.63" width="130" height="36" rx="9" fill="#ffffff" stroke="#92400e"/>
+<text x="1359.24" y="311.63" text-anchor="middle" fill="#92400e" font-size="18">显示与渲染</text>
+</a>
+<a href="../references/edk2-map.md"><rect x="1118.92" y="363.73" width="130" height="36" rx="9" fill="#ffffff" stroke="#92400e"/>
+<text x="1183.92" y="387.73" text-anchor="middle" fill="#92400e" font-size="18">配置写回</text>
+</a>
+<a href="../references/uefi-spec-map.md"><rect x="1105.67" y="709.47" width="130" height="36" rx="9" fill="#ffffff" stroke="#0e7490"/>
+<text x="1170.67" y="733.47" text-anchor="middle" fill="#0e7490" font-size="18">Secure Boot</text>
+</a>
+<a href="../references/uefi-spec-map.md"><rect x="1361.21" y="874.52" width="195" height="36" rx="9" fill="#ffffff" stroke="#0e7490"/>
+<text x="1458.71" y="898.52" text-anchor="middle" fill="#0e7490" font-size="18">Measured Boot / TPM</text>
+</a>
+<circle cx="60" cy="1210" r="7" fill="#475569"/><text x="77" y="1216" fill="#334155" font-size="18">文档</text>
+<circle cx="305" cy="1210" r="7" fill="#1d4ed8"/><text x="322" y="1216" fill="#334155" font-size="18">定位</text>
+<circle cx="550" cy="1210" r="7" fill="#7e22ce"/><text x="567" y="1216" fill="#334155" font-size="18">依据</text>
+<circle cx="795" cy="1210" r="7" fill="#047857"/><text x="812" y="1216" fill="#334155" font-size="18">验证</text>
+<circle cx="1040" cy="1210" r="7" fill="#92400e"/><text x="1057" y="1216" fill="#334155" font-size="18">实现</text>
+<circle cx="1285" cy="1210" r="7" fill="#be123c"/><text x="1302" y="1216" fill="#334155" font-size="18">排障</text>
+<circle cx="1530" cy="1210" r="7" fill="#0e7490"/><text x="1547" y="1216" fill="#334155" font-size="18">边界</text>
+<text x="48" y="1260" fill="#334155" font-size="18">关系范围：当前公开 skill 的明确引用 + 有原文依据的人工整理关系；不声称穷尽全部 UEFI 知识。</text>
+<text x="48" y="1296" fill="#475569" font-size="18">交互版 network.html：点选展开 · 1 / 2 / 全部层级 · 搜索 · 拖动缩放 · 连线依据 · 文档内嵌阅读</text></g></svg>

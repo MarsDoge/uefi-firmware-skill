@@ -1,0 +1,1442 @@
+{
+  "schema_version": 1,
+  "scope": "当前可发布 skill 的 SKILL.md 与 references/*.md；不包含本机私有笔记或未审核的推断。",
+  "coverage": "All resolvable explicit links between SKILL.md and references/*.md, plus curated topic relations backed by exact source excerpts. This is not an exhaustive ontology of UEFI.",
+  "nodes": [
+    {
+      "id": "doc:SKILL.md",
+      "label": "SKILL.md",
+      "group": "文档",
+      "summary": "UEFI Firmware",
+      "sources": [
+        {
+          "path": "SKILL.md",
+          "line": 16,
+          "excerpt": "# UEFI Firmware"
+        }
+      ],
+      "x": 1067.0,
+      "y": 879.62,
+      "color": "#475569"
+    },
+    {
+      "id": "doc:references/debugging-map.md",
+      "label": "debugging-map.md",
+      "group": "文档",
+      "summary": "UEFI Debugging Map",
+      "sources": [
+        {
+          "path": "references/debugging-map.md",
+          "line": 1,
+          "excerpt": "# UEFI Debugging Map"
+        }
+      ],
+      "x": 831.42,
+      "y": 404.8,
+      "color": "#475569"
+    },
+    {
+      "id": "doc:references/decision-flow.md",
+      "label": "decision-flow.md",
+      "group": "文档",
+      "summary": "Decision Flow / 工程决策流程",
+      "sources": [
+        {
+          "path": "references/decision-flow.md",
+          "line": 2,
+          "excerpt": "# Decision Flow / 工程决策流程"
+        }
+      ],
+      "x": 1271.97,
+      "y": 803.52,
+      "color": "#475569"
+    },
+    {
+      "id": "doc:references/distillation-method.md",
+      "label": "distillation-method.md",
+      "group": "文档",
+      "summary": "UEFI Firmware Skill Distillation Method",
+      "sources": [
+        {
+          "path": "references/distillation-method.md",
+          "line": 1,
+          "excerpt": "# UEFI Firmware Skill Distillation Method"
+        }
+      ],
+      "x": 695.8,
+      "y": 787.54,
+      "color": "#475569"
+    },
+    {
+      "id": "doc:references/edk2-map.md",
+      "label": "edk2-map.md",
+      "group": "文档",
+      "summary": "edk2 Map",
+      "sources": [
+        {
+          "path": "references/edk2-map.md",
+          "line": 1,
+          "excerpt": "# edk2 Map"
+        }
+      ],
+      "x": 1426.13,
+      "y": 547.0,
+      "color": "#475569"
+    },
+    {
+      "id": "doc:references/uefi-spec-map.md",
+      "label": "uefi-spec-map.md",
+      "group": "文档",
+      "summary": "UEFI Specification Map",
+      "sources": [
+        {
+          "path": "references/uefi-spec-map.md",
+          "line": 1,
+          "excerpt": "# UEFI Specification Map"
+        }
+      ],
+      "x": 1313.02,
+      "y": 1052.84,
+      "color": "#475569"
+    },
+    {
+      "id": "doc:references/upstreaming.md",
+      "label": "upstreaming.md",
+      "group": "文档",
+      "summary": "Upstreaming Firmware Changes",
+      "sources": [
+        {
+          "path": "references/upstreaming.md",
+          "line": 1,
+          "excerpt": "# Upstreaming Firmware Changes"
+        }
+      ],
+      "x": 1473.12,
+      "y": 1131.13,
+      "color": "#475569"
+    },
+    {
+      "id": "doc:references/workflows.md",
+      "label": "workflows.md",
+      "group": "文档",
+      "summary": "UEFI Firmware Workflows",
+      "sources": [
+        {
+          "path": "references/workflows.md",
+          "line": 1,
+          "excerpt": "# UEFI Firmware Workflows"
+        }
+      ],
+      "x": 1168.96,
+      "y": 1157.68,
+      "color": "#475569"
+    },
+    {
+      "id": "phase",
+      "label": "启动阶段",
+      "group": "定位",
+      "summary": "Every firmware symptom belongs to a phase or a phase boundary.",
+      "sources": [
+        {
+          "path": "references/distillation-method.md",
+          "line": 14,
+          "excerpt": "Every firmware symptom belongs to a phase or a phase boundary."
+        }
+      ],
+      "x": 792.44,
+      "y": 1157.68,
+      "color": "#1d4ed8"
+    },
+    {
+      "id": "owner",
+      "label": "生产者 / 消费者",
+      "group": "定位",
+      "summary": "### 3. Producer/Consumer Ownership",
+      "sources": [
+        {
+          "path": "references/distillation-method.md",
+          "line": 41,
+          "excerpt": "### 3. Producer/Consumer Ownership"
+        }
+      ],
+      "x": 967.84,
+      "y": 591.13,
+      "color": "#1d4ed8"
+    },
+    {
+      "id": "dependency",
+      "label": "初始化依赖",
+      "group": "定位",
+      "summary": "constructors, initialized state, memory, services, and protocol producers.",
+      "sources": [
+        {
+          "path": "references/distillation-method.md",
+          "line": 178,
+          "excerpt": "constructors, initialized state, memory, services, and protocol producers."
+        }
+      ],
+      "x": 689.26,
+      "y": 962.56,
+      "color": "#1d4ed8"
+    },
+    {
+      "id": "spec",
+      "label": "规范契约",
+      "group": "依据",
+      "summary": "- **Specification contract**: UEFI, PI, ACPI, SMBIOS, TCG, or architecture ABI.",
+      "sources": [
+        {
+          "path": "references/distillation-method.md",
+          "line": 31,
+          "excerpt": "- **Specification contract**: UEFI, PI, ACPI, SMBIOS, TCG, or architecture ABI."
+        }
+      ],
+      "x": 959.36,
+      "y": 1001.98,
+      "color": "#7e22ce"
+    },
+    {
+      "id": "implementation",
+      "label": "edk2 实现",
+      "group": "依据",
+      "summary": "Do not turn an edk2 behavior into a spec rule.",
+      "sources": [
+        {
+          "path": "references/distillation-method.md",
+          "line": 38,
+          "excerpt": "Do not turn an edk2 behavior into a spec rule."
+        }
+      ],
+      "x": 522.34,
+      "y": 1145.82,
+      "color": "#7e22ce"
+    },
+    {
+      "id": "policy",
+      "label": "平台策略",
+      "group": "依据",
+      "summary": "Do not turn a platform workaround\ninto a generic firmware rule.",
+      "sources": [
+        {
+          "path": "references/distillation-method.md",
+          "line": 38,
+          "excerpt": "Do not turn a platform workaround\ninto a generic firmware rule."
+        }
+      ],
+      "x": 881.61,
+      "y": 678.1,
+      "color": "#7e22ce"
+    },
+    {
+      "id": "tools",
+      "label": "工具与编译行为",
+      "group": "依据",
+      "summary": "- **Tool behavior**: compiler, BaseTools, QEMU, accelerator, debugger, or host\n  environment.",
+      "sources": [
+        {
+          "path": "references/distillation-method.md",
+          "line": 35,
+          "excerpt": "- **Tool behavior**: compiler, BaseTools, QEMU, accelerator, debugger, or host\n  environment."
+        }
+      ],
+      "x": 464.3,
+      "y": 592.51,
+      "color": "#7e22ce"
+    },
+    {
+      "id": "artifact",
+      "label": "实际运行产物",
+      "group": "验证",
+      "summary": "## Build-to-Run Trace / 从构建追到运行",
+      "sources": [
+        {
+          "path": "references/debugging-map.md",
+          "line": 69,
+          "excerpt": "## Build-to-Run Trace / 从构建追到运行"
+        }
+      ],
+      "x": 413.59,
+      "y": 354.09,
+      "color": "#047857"
+    },
+    {
+      "id": "verify",
+      "label": "目标行为验证",
+      "group": "验证",
+      "summary": "**Rule:** Test the consumer-visible outcome, not just an intermediate success code.",
+      "sources": [
+        {
+          "path": "references/distillation-method.md",
+          "line": 149,
+          "excerpt": "**Rule:** Test the consumer-visible outcome, not just an intermediate success code."
+        }
+      ],
+      "x": 743.06,
+      "y": 515.03,
+      "color": "#047857"
+    },
+    {
+      "id": "limits",
+      "label": "证据与结论边界",
+      "group": "验证",
+      "summary": "A missing test is not itself a demonstrated bug.",
+      "sources": [
+        {
+          "path": "references/distillation-method.md",
+          "line": 164,
+          "excerpt": "A missing test is not itself a demonstrated bug."
+        }
+      ],
+      "x": 377.0,
+      "y": 813.91,
+      "color": "#047857"
+    },
+    {
+      "id": "protocol",
+      "label": "接口兼容",
+      "group": "实现",
+      "summary": "### 8. Review Interface Evolution and Failure Ownership / 检查接口演进与失败归属",
+      "sources": [
+        {
+          "path": "references/distillation-method.md",
+          "line": 189,
+          "excerpt": "### 8. Review Interface Evolution and Failure Ownership / 检查接口演进与失败归属"
+        }
+      ],
+      "x": 194.2,
+      "y": 596.71,
+      "color": "#92400e"
+    },
+    {
+      "id": "cleanup",
+      "label": "失败路径与资源",
+      "group": "实现",
+      "summary": "Trace resource ownership and\nstate transitions through every relevant failure edge, including partial success.",
+      "sources": [
+        {
+          "path": "references/distillation-method.md",
+          "line": 192,
+          "excerpt": "Trace resource ownership and\nstate transitions through every relevant failure edge, including partial success."
+        }
+      ],
+      "x": 535.64,
+      "y": 438.98,
+      "color": "#92400e"
+    },
+    {
+      "id": "relocation",
+      "label": "地址与重定位",
+      "group": "排障",
+      "summary": "Distinguish runtime addresses, PE RVAs, ELF virtual addresses, and file\noffsets; derive conversions from the loader and section layout.",
+      "sources": [
+        {
+          "path": "references/debugging-map.md",
+          "line": 89,
+          "excerpt": "Distinguish runtime addresses, PE RVAs, ELF virtual addresses, and file\noffsets; derive conversions from the loader and section layout."
+        }
+      ],
+      "x": 364.49,
+      "y": 135.0,
+      "color": "#be123c"
+    },
+    {
+      "id": "stack",
+      "label": "栈帧与反汇编",
+      "group": "排障",
+      "summary": "Use target-aware\ndisassembly to inspect the failing instruction, relocation target, and stack frame.",
+      "sources": [
+        {
+          "path": "references/debugging-map.md",
+          "line": 90,
+          "excerpt": "Use target-aware\ndisassembly to inspect the failing instruction, relocation target, and stack frame."
+        }
+      ],
+      "x": 544.74,
+      "y": 211.1,
+      "color": "#be123c"
+    },
+    {
+      "id": "boot",
+      "label": "设备可见 / 启动项缺失",
+      "group": "排障",
+      "summary": "## Device Visibility versus Boot Entries / 设备可见与启动项分开排查",
+      "sources": [
+        {
+          "path": "references/debugging-map.md",
+          "line": 104,
+          "excerpt": "## Device Visibility versus Boot Entries / 设备可见与启动项分开排查"
+        }
+      ],
+      "x": 814.84,
+      "y": 213.72,
+      "color": "#be123c"
+    },
+    {
+      "id": "variables",
+      "label": "Boot#### / BootOrder",
+      "group": "实现",
+      "summary": "Inspect the relevant\nBoot#### and BootOrder operations and their exact status before blaming device\nenumeration or changing boot policy.",
+      "sources": [
+        {
+          "path": "references/debugging-map.md",
+          "line": 107,
+          "excerpt": "Inspect the relevant\nBoot#### and BootOrder operations and their exact status before blaming device\nenumeration or changing boot policy."
+        }
+      ],
+      "x": 994.52,
+      "y": 137.62,
+      "color": "#92400e"
+    },
+    {
+      "id": "hii",
+      "label": "HII / VFR / IFR",
+      "group": "实现",
+      "summary": "VFR compiles into IFR bytecode carried in HII form packages.",
+      "sources": [
+        {
+          "path": "references/edk2-map.md",
+          "line": 42,
+          "excerpt": "VFR compiles into IFR bytecode carried in HII form packages."
+        }
+      ],
+      "x": 1549.48,
+      "y": 157.68,
+      "color": "#92400e"
+    },
+    {
+      "id": "browser",
+      "label": "FormBrowser 语义",
+      "group": "实现",
+      "summary": "`SetupBrowserDxe`/FormBrowser interprets IFR, evaluates conditions, calls\n  `EFI_HII_CONFIG_ACCESS_PROTOCOL`, and manages question semantics.",
+      "sources": [
+        {
+          "path": "references/edk2-map.md",
+          "line": 43,
+          "excerpt": "`SetupBrowserDxe`/FormBrowser interprets IFR, evaluates conditions, calls\n  `EFI_HII_CONFIG_ACCESS_PROTOCOL`, and manages question semantics."
+        }
+      ],
+      "x": 1629.34,
+      "y": 361.53,
+      "color": "#92400e"
+    },
+    {
+      "id": "render",
+      "label": "显示与渲染",
+      "group": "实现",
+      "summary": "Display engines render already-interpreted form state.",
+      "sources": [
+        {
+          "path": "references/edk2-map.md",
+          "line": 45,
+          "excerpt": "Display engines render already-interpreted form state."
+        }
+      ],
+      "x": 1359.24,
+      "y": 305.63,
+      "color": "#92400e"
+    },
+    {
+      "id": "config",
+      "label": "配置写回",
+      "group": "实现",
+      "summary": "`ConfigAccess.ExtractConfig()` reads current configuration and\n  `RouteConfig()` writes configuration back through the owning driver.",
+      "sources": [
+        {
+          "path": "references/edk2-map.md",
+          "line": 47,
+          "excerpt": "`ConfigAccess.ExtractConfig()` reads current configuration and\n  `RouteConfig()` writes configuration back through the owning driver."
+        }
+      ],
+      "x": 1183.92,
+      "y": 381.73,
+      "color": "#92400e"
+    },
+    {
+      "id": "secure",
+      "label": "Secure Boot",
+      "group": "边界",
+      "summary": "UEFI owns Secure Boot variables, image authentication, signature databases, and",
+      "sources": [
+        {
+          "path": "references/uefi-spec-map.md",
+          "line": 63,
+          "excerpt": "UEFI owns Secure Boot variables, image authentication, signature databases, and"
+        }
+      ],
+      "x": 1170.67,
+      "y": 727.47,
+      "color": "#0e7490"
+    },
+    {
+      "id": "measured",
+      "label": "Measured Boot / TPM",
+      "group": "边界",
+      "summary": "TCG owns measured boot concepts, PCR semantics, TPM event log formats, and",
+      "sources": [
+        {
+          "path": "references/uefi-spec-map.md",
+          "line": 65,
+          "excerpt": "TCG owns measured boot concepts, PCR semantics, TPM event log formats, and"
+        }
+      ],
+      "x": 1458.71,
+      "y": 892.52,
+      "color": "#0e7490"
+    }
+  ],
+  "edges": [
+    {
+      "source": "doc:references/distillation-method.md",
+      "target": "phase",
+      "label": "说明",
+      "kind": "index",
+      "evidence": {
+        "path": "references/distillation-method.md",
+        "line": 14,
+        "excerpt": "Every firmware symptom belongs to a phase or a phase boundary."
+      },
+      "id": "e0"
+    },
+    {
+      "source": "doc:references/distillation-method.md",
+      "target": "owner",
+      "label": "说明",
+      "kind": "index",
+      "evidence": {
+        "path": "references/distillation-method.md",
+        "line": 41,
+        "excerpt": "### 3. Producer/Consumer Ownership"
+      },
+      "id": "e1"
+    },
+    {
+      "source": "doc:references/distillation-method.md",
+      "target": "dependency",
+      "label": "说明",
+      "kind": "index",
+      "evidence": {
+        "path": "references/distillation-method.md",
+        "line": 178,
+        "excerpt": "constructors, initialized state, memory, services, and protocol producers."
+      },
+      "id": "e2"
+    },
+    {
+      "source": "doc:references/distillation-method.md",
+      "target": "spec",
+      "label": "说明",
+      "kind": "index",
+      "evidence": {
+        "path": "references/distillation-method.md",
+        "line": 31,
+        "excerpt": "- **Specification contract**: UEFI, PI, ACPI, SMBIOS, TCG, or architecture ABI."
+      },
+      "id": "e3"
+    },
+    {
+      "source": "doc:references/distillation-method.md",
+      "target": "implementation",
+      "label": "说明",
+      "kind": "index",
+      "evidence": {
+        "path": "references/distillation-method.md",
+        "line": 38,
+        "excerpt": "Do not turn an edk2 behavior into a spec rule."
+      },
+      "id": "e4"
+    },
+    {
+      "source": "doc:references/distillation-method.md",
+      "target": "policy",
+      "label": "说明",
+      "kind": "index",
+      "evidence": {
+        "path": "references/distillation-method.md",
+        "line": 38,
+        "excerpt": "Do not turn a platform workaround\ninto a generic firmware rule."
+      },
+      "id": "e5"
+    },
+    {
+      "source": "doc:references/distillation-method.md",
+      "target": "tools",
+      "label": "说明",
+      "kind": "index",
+      "evidence": {
+        "path": "references/distillation-method.md",
+        "line": 35,
+        "excerpt": "- **Tool behavior**: compiler, BaseTools, QEMU, accelerator, debugger, or host\n  environment."
+      },
+      "id": "e6"
+    },
+    {
+      "source": "doc:references/debugging-map.md",
+      "target": "artifact",
+      "label": "说明",
+      "kind": "index",
+      "evidence": {
+        "path": "references/debugging-map.md",
+        "line": 69,
+        "excerpt": "## Build-to-Run Trace / 从构建追到运行"
+      },
+      "id": "e7"
+    },
+    {
+      "source": "doc:references/distillation-method.md",
+      "target": "verify",
+      "label": "说明",
+      "kind": "index",
+      "evidence": {
+        "path": "references/distillation-method.md",
+        "line": 149,
+        "excerpt": "**Rule:** Test the consumer-visible outcome, not just an intermediate success code."
+      },
+      "id": "e8"
+    },
+    {
+      "source": "doc:references/distillation-method.md",
+      "target": "limits",
+      "label": "说明",
+      "kind": "index",
+      "evidence": {
+        "path": "references/distillation-method.md",
+        "line": 164,
+        "excerpt": "A missing test is not itself a demonstrated bug."
+      },
+      "id": "e9"
+    },
+    {
+      "source": "doc:references/distillation-method.md",
+      "target": "protocol",
+      "label": "说明",
+      "kind": "index",
+      "evidence": {
+        "path": "references/distillation-method.md",
+        "line": 189,
+        "excerpt": "### 8. Review Interface Evolution and Failure Ownership / 检查接口演进与失败归属"
+      },
+      "id": "e10"
+    },
+    {
+      "source": "doc:references/distillation-method.md",
+      "target": "cleanup",
+      "label": "说明",
+      "kind": "index",
+      "evidence": {
+        "path": "references/distillation-method.md",
+        "line": 192,
+        "excerpt": "Trace resource ownership and\nstate transitions through every relevant failure edge, including partial success."
+      },
+      "id": "e11"
+    },
+    {
+      "source": "doc:references/debugging-map.md",
+      "target": "relocation",
+      "label": "说明",
+      "kind": "index",
+      "evidence": {
+        "path": "references/debugging-map.md",
+        "line": 89,
+        "excerpt": "Distinguish runtime addresses, PE RVAs, ELF virtual addresses, and file\noffsets; derive conversions from the loader and section layout."
+      },
+      "id": "e12"
+    },
+    {
+      "source": "doc:references/debugging-map.md",
+      "target": "stack",
+      "label": "说明",
+      "kind": "index",
+      "evidence": {
+        "path": "references/debugging-map.md",
+        "line": 90,
+        "excerpt": "Use target-aware\ndisassembly to inspect the failing instruction, relocation target, and stack frame."
+      },
+      "id": "e13"
+    },
+    {
+      "source": "doc:references/debugging-map.md",
+      "target": "boot",
+      "label": "说明",
+      "kind": "index",
+      "evidence": {
+        "path": "references/debugging-map.md",
+        "line": 104,
+        "excerpt": "## Device Visibility versus Boot Entries / 设备可见与启动项分开排查"
+      },
+      "id": "e14"
+    },
+    {
+      "source": "doc:references/debugging-map.md",
+      "target": "variables",
+      "label": "说明",
+      "kind": "index",
+      "evidence": {
+        "path": "references/debugging-map.md",
+        "line": 107,
+        "excerpt": "Inspect the relevant\nBoot#### and BootOrder operations and their exact status before blaming device\nenumeration or changing boot policy."
+      },
+      "id": "e15"
+    },
+    {
+      "source": "doc:references/edk2-map.md",
+      "target": "hii",
+      "label": "说明",
+      "kind": "index",
+      "evidence": {
+        "path": "references/edk2-map.md",
+        "line": 42,
+        "excerpt": "VFR compiles into IFR bytecode carried in HII form packages."
+      },
+      "id": "e16"
+    },
+    {
+      "source": "doc:references/edk2-map.md",
+      "target": "browser",
+      "label": "说明",
+      "kind": "index",
+      "evidence": {
+        "path": "references/edk2-map.md",
+        "line": 43,
+        "excerpt": "`SetupBrowserDxe`/FormBrowser interprets IFR, evaluates conditions, calls\n  `EFI_HII_CONFIG_ACCESS_PROTOCOL`, and manages question semantics."
+      },
+      "id": "e17"
+    },
+    {
+      "source": "doc:references/edk2-map.md",
+      "target": "render",
+      "label": "说明",
+      "kind": "index",
+      "evidence": {
+        "path": "references/edk2-map.md",
+        "line": 45,
+        "excerpt": "Display engines render already-interpreted form state."
+      },
+      "id": "e18"
+    },
+    {
+      "source": "doc:references/edk2-map.md",
+      "target": "config",
+      "label": "说明",
+      "kind": "index",
+      "evidence": {
+        "path": "references/edk2-map.md",
+        "line": 47,
+        "excerpt": "`ConfigAccess.ExtractConfig()` reads current configuration and\n  `RouteConfig()` writes configuration back through the owning driver."
+      },
+      "id": "e19"
+    },
+    {
+      "source": "doc:references/uefi-spec-map.md",
+      "target": "secure",
+      "label": "说明",
+      "kind": "index",
+      "evidence": {
+        "path": "references/uefi-spec-map.md",
+        "line": 63,
+        "excerpt": "UEFI owns Secure Boot variables, image authentication, signature databases, and"
+      },
+      "id": "e20"
+    },
+    {
+      "source": "doc:references/uefi-spec-map.md",
+      "target": "measured",
+      "label": "说明",
+      "kind": "index",
+      "evidence": {
+        "path": "references/uefi-spec-map.md",
+        "line": 65,
+        "excerpt": "TCG owns measured boot concepts, PCR semantics, TPM event log formats, and"
+      },
+      "id": "e21"
+    },
+    {
+      "source": "phase",
+      "target": "dependency",
+      "label": "检查可用时机",
+      "kind": "semantic",
+      "evidence": {
+        "path": "references/distillation-method.md",
+        "line": 176,
+        "excerpt": "Check what is available when a function runs, not merely what its module\nlinks."
+      },
+      "id": "e22"
+    },
+    {
+      "source": "owner",
+      "target": "dependency",
+      "label": "检查可用性",
+      "kind": "semantic",
+      "evidence": {
+        "path": "references/distillation-method.md",
+        "line": 48,
+        "excerpt": "- when it becomes available,"
+      },
+      "id": "e23"
+    },
+    {
+      "source": "spec",
+      "target": "implementation",
+      "label": "区分",
+      "kind": "semantic",
+      "evidence": {
+        "path": "references/distillation-method.md",
+        "line": 38,
+        "excerpt": "Do not turn an edk2 behavior into a spec rule."
+      },
+      "id": "e24"
+    },
+    {
+      "source": "spec",
+      "target": "policy",
+      "label": "区分",
+      "kind": "semantic",
+      "evidence": {
+        "path": "references/distillation-method.md",
+        "line": 38,
+        "excerpt": "Do not turn a platform workaround\ninto a generic firmware rule."
+      },
+      "id": "e25"
+    },
+    {
+      "source": "tools",
+      "target": "artifact",
+      "label": "核查生成链",
+      "kind": "semantic",
+      "evidence": {
+        "path": "references/debugging-map.md",
+        "line": 73,
+        "excerpt": "After changing a conversion or packaging tool,\nverify that downstream images were regenerated with it"
+      },
+      "id": "e26"
+    },
+    {
+      "source": "artifact",
+      "target": "verify",
+      "label": "先确认加载对象",
+      "kind": "semantic",
+      "evidence": {
+        "path": "references/debugging-map.md",
+        "line": 61,
+        "excerpt": "confirm the loaded\napplication first, then navigate to that page, exercise the affected interaction"
+      },
+      "id": "e27"
+    },
+    {
+      "source": "verify",
+      "target": "limits",
+      "label": "限制结论范围",
+      "kind": "semantic",
+      "evidence": {
+        "path": "references/workflows.md",
+        "line": 145,
+        "excerpt": "Building a host test is not executing it; executing it is not a target\nplatform boot test."
+      },
+      "id": "e28"
+    },
+    {
+      "source": "verify",
+      "target": "cleanup",
+      "label": "覆盖失败路径",
+      "kind": "semantic",
+      "evidence": {
+        "path": "references/distillation-method.md",
+        "line": 150,
+        "excerpt": "Cover relevant boundaries, error propagation, and cleanup according to the\ninterface contract."
+      },
+      "id": "e29"
+    },
+    {
+      "source": "protocol",
+      "target": "cleanup",
+      "label": "一并检查所有权",
+      "kind": "semantic",
+      "evidence": {
+        "path": "references/distillation-method.md",
+        "line": 192,
+        "excerpt": "Trace resource ownership and\nstate transitions through every relevant failure edge, including partial success."
+      },
+      "id": "e30"
+    },
+    {
+      "source": "cleanup",
+      "target": "owner",
+      "label": "尊重资源归属",
+      "kind": "semantic",
+      "evidence": {
+        "path": "references/distillation-method.md",
+        "line": 203,
+        "excerpt": "do not\nfree caller-owned resources"
+      },
+      "id": "e31"
+    },
+    {
+      "source": "relocation",
+      "target": "artifact",
+      "label": "要求匹配构建",
+      "kind": "semantic",
+      "evidence": {
+        "path": "references/debugging-map.md",
+        "line": 88,
+        "excerpt": "Identify the faulting module and exact build before symbolizing an\naddress."
+      },
+      "id": "e32"
+    },
+    {
+      "source": "relocation",
+      "target": "stack",
+      "label": "共同定位异常",
+      "kind": "semantic",
+      "evidence": {
+        "path": "references/debugging-map.md",
+        "line": 90,
+        "excerpt": "Use target-aware\ndisassembly to inspect the failing instruction, relocation target, and stack frame."
+      },
+      "id": "e33"
+    },
+    {
+      "source": "stack",
+      "target": "tools",
+      "label": "检查生成代码",
+      "kind": "semantic",
+      "evidence": {
+        "path": "references/debugging-map.md",
+        "line": 94,
+        "excerpt": "inspect the generated prologue and callees for large stack\nallocations or inlining."
+      },
+      "id": "e34"
+    },
+    {
+      "source": "boot",
+      "target": "variables",
+      "label": "检查持久化路径",
+      "kind": "semantic",
+      "evidence": {
+        "path": "references/debugging-map.md",
+        "line": 107,
+        "excerpt": "Inspect the relevant\nBoot#### and BootOrder operations and their exact status"
+      },
+      "id": "e35"
+    },
+    {
+      "source": "boot",
+      "target": "policy",
+      "label": "核对准入条件",
+      "kind": "semantic",
+      "evidence": {
+        "path": "references/debugging-map.md",
+        "line": 115,
+        "excerpt": "A visible filesystem proves neither a valid loader nor eligibility under\nplatform boot policy."
+      },
+      "id": "e36"
+    },
+    {
+      "source": "variables",
+      "target": "verify",
+      "label": "保留原始状态",
+      "kind": "semantic",
+      "evidence": {
+        "path": "references/debugging-map.md",
+        "line": 117,
+        "excerpt": "Preserve the failing store for diagnosis; do not automatically delete user boot\nentries"
+      },
+      "id": "e37"
+    },
+    {
+      "source": "hii",
+      "target": "browser",
+      "label": "由其解释",
+      "kind": "semantic",
+      "evidence": {
+        "path": "references/edk2-map.md",
+        "line": 43,
+        "excerpt": "`SetupBrowserDxe`/FormBrowser interprets IFR"
+      },
+      "id": "e38"
+    },
+    {
+      "source": "browser",
+      "target": "render",
+      "label": "语义与显示分工",
+      "kind": "semantic",
+      "evidence": {
+        "path": "references/edk2-map.md",
+        "line": 45,
+        "excerpt": "Display engines render already-interpreted form state."
+      },
+      "id": "e39"
+    },
+    {
+      "source": "browser",
+      "target": "config",
+      "label": "调用配置接口",
+      "kind": "semantic",
+      "evidence": {
+        "path": "references/edk2-map.md",
+        "line": 43,
+        "excerpt": "calls\n  `EFI_HII_CONFIG_ACCESS_PROTOCOL`"
+      },
+      "id": "e40"
+    },
+    {
+      "source": "config",
+      "target": "owner",
+      "label": "经所属驱动写回",
+      "kind": "semantic",
+      "evidence": {
+        "path": "references/edk2-map.md",
+        "line": 48,
+        "excerpt": "`RouteConfig()` writes configuration back through the owning driver."
+      },
+      "id": "e41"
+    },
+    {
+      "source": "config",
+      "target": "verify",
+      "label": "检查保存与效果",
+      "kind": "semantic",
+      "evidence": {
+        "path": "references/distillation-method.md",
+        "line": 153,
+        "excerpt": "For a setting, verify modification, save, reread, and the intended\nvisible effect."
+      },
+      "id": "e42"
+    },
+    {
+      "source": "render",
+      "target": "owner",
+      "label": "定位显示职责",
+      "kind": "semantic",
+      "evidence": {
+        "path": "references/distillation-method.md",
+        "line": 51,
+        "excerpt": "a setup UI visual issue may\nbelong to DisplayEngine"
+      },
+      "id": "e43"
+    },
+    {
+      "source": "secure",
+      "target": "measured",
+      "label": "区分规范边界",
+      "kind": "semantic",
+      "evidence": {
+        "path": "references/uefi-spec-map.md",
+        "line": 75,
+        "excerpt": "Secure Boot policy is\n  UEFI, TPM measurements are TCG"
+      },
+      "id": "e44"
+    },
+    {
+      "source": "secure",
+      "target": "policy",
+      "label": "区分实现与策略",
+      "kind": "semantic",
+      "evidence": {
+        "path": "references/uefi-spec-map.md",
+        "line": 67,
+        "excerpt": "platform policy\n  determines defaults, key enrollment flows, setup UI, and deployment constraints."
+      },
+      "id": "e45"
+    },
+    {
+      "source": "secure",
+      "target": "spec",
+      "label": "归属 UEFI",
+      "kind": "semantic",
+      "evidence": {
+        "path": "references/uefi-spec-map.md",
+        "line": 63,
+        "excerpt": "UEFI owns Secure Boot variables, image authentication, signature databases"
+      },
+      "id": "e46"
+    },
+    {
+      "source": "measured",
+      "target": "spec",
+      "label": "归属 TCG",
+      "kind": "semantic",
+      "evidence": {
+        "path": "references/uefi-spec-map.md",
+        "line": 65,
+        "excerpt": "TCG owns measured boot concepts, PCR semantics, TPM event log formats"
+      },
+      "id": "e47"
+    },
+    {
+      "source": "doc:SKILL.md",
+      "target": "doc:references/uefi-spec-map.md",
+      "label": "引用",
+      "kind": "reference",
+      "evidence": {
+        "path": "SKILL.md",
+        "line": 41,
+        "excerpt": "`references/uefi-spec-map.md`"
+      },
+      "occurrences": [
+        {
+          "path": "SKILL.md",
+          "line": 41,
+          "excerpt": "`references/uefi-spec-map.md`"
+        },
+        {
+          "path": "SKILL.md",
+          "line": 137,
+          "excerpt": "`references/uefi-spec-map.md`"
+        }
+      ],
+      "id": "e48"
+    },
+    {
+      "source": "doc:SKILL.md",
+      "target": "doc:references/edk2-map.md",
+      "label": "引用",
+      "kind": "reference",
+      "evidence": {
+        "path": "SKILL.md",
+        "line": 42,
+        "excerpt": "`references/edk2-map.md`"
+      },
+      "occurrences": [
+        {
+          "path": "SKILL.md",
+          "line": 42,
+          "excerpt": "`references/edk2-map.md`"
+        },
+        {
+          "path": "SKILL.md",
+          "line": 44,
+          "excerpt": "`references/edk2-map.md`"
+        },
+        {
+          "path": "SKILL.md",
+          "line": 139,
+          "excerpt": "`references/edk2-map.md`"
+        }
+      ],
+      "id": "e49"
+    },
+    {
+      "source": "doc:SKILL.md",
+      "target": "doc:references/debugging-map.md",
+      "label": "引用",
+      "kind": "reference",
+      "evidence": {
+        "path": "SKILL.md",
+        "line": 43,
+        "excerpt": "`references/debugging-map.md`"
+      },
+      "occurrences": [
+        {
+          "path": "SKILL.md",
+          "line": 43,
+          "excerpt": "`references/debugging-map.md`"
+        },
+        {
+          "path": "SKILL.md",
+          "line": 44,
+          "excerpt": "`references/debugging-map.md`"
+        },
+        {
+          "path": "SKILL.md",
+          "line": 142,
+          "excerpt": "`references/debugging-map.md`"
+        }
+      ],
+      "id": "e50"
+    },
+    {
+      "source": "doc:SKILL.md",
+      "target": "doc:references/distillation-method.md",
+      "label": "引用",
+      "kind": "reference",
+      "evidence": {
+        "path": "SKILL.md",
+        "line": 45,
+        "excerpt": "`references/distillation-method.md`"
+      },
+      "occurrences": [
+        {
+          "path": "SKILL.md",
+          "line": 45,
+          "excerpt": "`references/distillation-method.md`"
+        },
+        {
+          "path": "SKILL.md",
+          "line": 70,
+          "excerpt": "`references/distillation-method.md`"
+        },
+        {
+          "path": "SKILL.md",
+          "line": 124,
+          "excerpt": "`references/distillation-method.md`"
+        },
+        {
+          "path": "SKILL.md",
+          "line": 135,
+          "excerpt": "`references/distillation-method.md`"
+        }
+      ],
+      "id": "e51"
+    },
+    {
+      "source": "doc:SKILL.md",
+      "target": "doc:references/upstreaming.md",
+      "label": "引用",
+      "kind": "reference",
+      "evidence": {
+        "path": "SKILL.md",
+        "line": 45,
+        "excerpt": "`references/upstreaming.md`"
+      },
+      "occurrences": [
+        {
+          "path": "SKILL.md",
+          "line": 45,
+          "excerpt": "`references/upstreaming.md`"
+        },
+        {
+          "path": "SKILL.md",
+          "line": 144,
+          "excerpt": "`references/upstreaming.md`"
+        }
+      ],
+      "id": "e52"
+    },
+    {
+      "source": "doc:SKILL.md",
+      "target": "doc:references/workflows.md",
+      "label": "引用",
+      "kind": "reference",
+      "evidence": {
+        "path": "SKILL.md",
+        "line": 46,
+        "excerpt": "`references/workflows.md`"
+      },
+      "occurrences": [
+        {
+          "path": "SKILL.md",
+          "line": 46,
+          "excerpt": "`references/workflows.md`"
+        },
+        {
+          "path": "SKILL.md",
+          "line": 126,
+          "excerpt": "`references/workflows.md`"
+        },
+        {
+          "path": "SKILL.md",
+          "line": 133,
+          "excerpt": "`references/workflows.md`"
+        }
+      ],
+      "id": "e53"
+    },
+    {
+      "source": "doc:SKILL.md",
+      "target": "doc:references/decision-flow.md",
+      "label": "引用",
+      "kind": "reference",
+      "evidence": {
+        "path": "SKILL.md",
+        "line": 48,
+        "excerpt": "`references/decision-flow.md`"
+      },
+      "occurrences": [
+        {
+          "path": "SKILL.md",
+          "line": 48,
+          "excerpt": "`references/decision-flow.md`"
+        }
+      ],
+      "id": "e54"
+    },
+    {
+      "source": "doc:references/decision-flow.md",
+      "target": "doc:references/distillation-method.md",
+      "label": "引用",
+      "kind": "reference",
+      "evidence": {
+        "path": "references/decision-flow.md",
+        "line": 16,
+        "excerpt": "](distillation-method.md)"
+      },
+      "occurrences": [
+        {
+          "path": "references/decision-flow.md",
+          "line": 16,
+          "excerpt": "](distillation-method.md)"
+        },
+        {
+          "path": "references/decision-flow.md",
+          "line": 26,
+          "excerpt": "](distillation-method.md)"
+        },
+        {
+          "path": "references/decision-flow.md",
+          "line": 46,
+          "excerpt": "](distillation-method.md)"
+        },
+        {
+          "path": "references/decision-flow.md",
+          "line": 66,
+          "excerpt": "](distillation-method.md)"
+        },
+        {
+          "path": "references/decision-flow.md",
+          "line": 70,
+          "excerpt": "](distillation-method.md)"
+        },
+        {
+          "path": "references/decision-flow.md",
+          "line": 71,
+          "excerpt": "](distillation-method.md)"
+        },
+        {
+          "path": "references/decision-flow.md",
+          "line": 74,
+          "excerpt": "](distillation-method.md)"
+        }
+      ],
+      "id": "e55"
+    },
+    {
+      "source": "doc:references/decision-flow.md",
+      "target": "doc:references/edk2-map.md",
+      "label": "引用",
+      "kind": "reference",
+      "evidence": {
+        "path": "references/decision-flow.md",
+        "line": 26,
+        "excerpt": "](edk2-map.md)"
+      },
+      "occurrences": [
+        {
+          "path": "references/decision-flow.md",
+          "line": 26,
+          "excerpt": "](edk2-map.md)"
+        },
+        {
+          "path": "references/decision-flow.md",
+          "line": 71,
+          "excerpt": "](edk2-map.md)"
+        },
+        {
+          "path": "references/decision-flow.md",
+          "line": 73,
+          "excerpt": "](edk2-map.md)"
+        }
+      ],
+      "id": "e56"
+    },
+    {
+      "source": "doc:references/decision-flow.md",
+      "target": "doc:references/uefi-spec-map.md",
+      "label": "引用",
+      "kind": "reference",
+      "evidence": {
+        "path": "references/decision-flow.md",
+        "line": 36,
+        "excerpt": "](uefi-spec-map.md)"
+      },
+      "occurrences": [
+        {
+          "path": "references/decision-flow.md",
+          "line": 36,
+          "excerpt": "](uefi-spec-map.md)"
+        },
+        {
+          "path": "references/decision-flow.md",
+          "line": 70,
+          "excerpt": "](uefi-spec-map.md)"
+        }
+      ],
+      "id": "e57"
+    },
+    {
+      "source": "doc:references/decision-flow.md",
+      "target": "doc:references/debugging-map.md",
+      "label": "引用",
+      "kind": "reference",
+      "evidence": {
+        "path": "references/decision-flow.md",
+        "line": 36,
+        "excerpt": "](debugging-map.md)"
+      },
+      "occurrences": [
+        {
+          "path": "references/decision-flow.md",
+          "line": 36,
+          "excerpt": "](debugging-map.md)"
+        },
+        {
+          "path": "references/decision-flow.md",
+          "line": 56,
+          "excerpt": "](debugging-map.md)"
+        },
+        {
+          "path": "references/decision-flow.md",
+          "line": 72,
+          "excerpt": "](debugging-map.md)"
+        },
+        {
+          "path": "references/decision-flow.md",
+          "line": 73,
+          "excerpt": "](debugging-map.md)"
+        }
+      ],
+      "id": "e58"
+    },
+    {
+      "source": "doc:references/decision-flow.md",
+      "target": "doc:references/upstreaming.md",
+      "label": "引用",
+      "kind": "reference",
+      "evidence": {
+        "path": "references/decision-flow.md",
+        "line": 46,
+        "excerpt": "](upstreaming.md)"
+      },
+      "occurrences": [
+        {
+          "path": "references/decision-flow.md",
+          "line": 46,
+          "excerpt": "](upstreaming.md)"
+        },
+        {
+          "path": "references/decision-flow.md",
+          "line": 66,
+          "excerpt": "](upstreaming.md)"
+        },
+        {
+          "path": "references/decision-flow.md",
+          "line": 74,
+          "excerpt": "](upstreaming.md)"
+        }
+      ],
+      "id": "e59"
+    },
+    {
+      "source": "doc:references/decision-flow.md",
+      "target": "doc:references/workflows.md",
+      "label": "引用",
+      "kind": "reference",
+      "evidence": {
+        "path": "references/decision-flow.md",
+        "line": 56,
+        "excerpt": "](workflows.md)"
+      },
+      "occurrences": [
+        {
+          "path": "references/decision-flow.md",
+          "line": 56,
+          "excerpt": "](workflows.md)"
+        },
+        {
+          "path": "references/decision-flow.md",
+          "line": 72,
+          "excerpt": "](workflows.md)"
+        }
+      ],
+      "id": "e60"
+    }
+  ]
+}

@@ -171,6 +171,38 @@ on the target board.
 and control flow establish it. State that basis explicitly instead of inventing a
 failed run or treating every hypothetical edge case as a blocker.
 
+### 7. Check Dependencies at the Call Site / 按调用时机检查依赖
+
+**Rule:** Check what is available when a function runs, not merely what its module
+links. Follow the selected library instance and its transitive dependencies:
+constructors, initialized state, memory, services, and protocol producers. For
+initialization failures, also check whether dispatch dependencies form a cycle.
+
+**Example:** An early entry path calling an RNG library needs an implementation
+usable at that point. Inspect whether the selected instance relies on a constructor
+or protocol that becomes available later; a successful link does not answer this.
+
+**Limit:** Do not ban a library class based on one instance. Availability depends
+on the actual instance, configuration, and entry sequence. A fallback must satisfy
+the caller's contract; a security-critical failure may require stopping instead.
+
+### 8. Review Interface Evolution and Failure Ownership / 检查接口演进与失败归属
+
+**Rule:** When extending an interface, check how consumers establish that an
+optional field or method exists before accessing it. Trace resource ownership and
+state transitions through every relevant failure edge, including partial success.
+Use the interface's documented compatibility mechanism rather than assuming that
+all producers were rebuilt together.
+
+**Example:** For a revisioned protocol extended with a trailing method, check the
+required revision before reading that method. For a map-then-permit operation,
+check how a failed permission step releases the successful mapping and any owned
+buffer, and which error the caller receives.
+
+**Limit:** Not every protocol has a revision field, and a NULL check cannot make an
+out-of-layout read safe. Cleanup must respect ownership and API semantics: do not
+free caller-owned resources or claim rollback succeeded when cleanup failed.
+
 ## Answer DNA
 
 Good answers should be direct, bounded, and operational:
